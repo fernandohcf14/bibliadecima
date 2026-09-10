@@ -1,0 +1,625 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>A Bíblia de Cima — Veja como os 66 livros se conectam</title>
+<meta name="description" content="Um guia visual para você entender como a Lei, os Profetas, os Evangelhos e as Cartas se encaixam numa única história.">
+
+<!-- Meta Pixel Code -->
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '938653842041574');
+fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=938653842041574&ev=PageView&noscript=1"
+/></noscript>
+<!-- End Meta Pixel Code -->
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+  :root{
+    --wine-950:#2E0F13;
+    --wine-900:#4A1418;
+    --wine-800:#5E1A1F;
+    --gold-600:#B4903F;
+    --gold-300:#D9C08A;
+    --cream-100:#F4EEE0;
+    --cream-50:#FAF6EC;
+    --ink-900:#241713;
+    --ink-700:#4A3A32;
+    --line:rgba(180,144,63,0.35);
+    --radius:2px;
+  }
+
+  *{box-sizing:border-box;}
+  html{scroll-behavior:smooth;}
+
+  body{
+    margin:0;
+    font-family:'Inter', sans-serif;
+    color:var(--ink-900);
+    background:var(--cream-50);
+    -webkit-font-smoothing:antialiased;
+  }
+
+  h1,h2,h3,.display{
+    font-family:'Fraunces', serif;
+    font-weight:500;
+    line-height:1.15;
+    letter-spacing:-0.01em;
+    margin:0;
+  }
+
+  p{
+    line-height:1.6;
+    margin:0;
+  }
+
+  a{color:inherit;}
+
+  /* ---------- progress bar ---------- */
+  .progress-shell{
+    position:fixed;
+    top:0; left:0; right:0;
+    height:4px;
+    background:rgba(180,144,63,0.18);
+    z-index:50;
+  }
+  .progress-fill{
+    height:100%;
+    width:0%;
+    background:linear-gradient(90deg,var(--gold-600),var(--gold-300));
+    transition:width .45s ease;
+  }
+
+  /* ---------- slides ---------- */
+  .track{
+    scroll-snap-type:y mandatory;
+    overflow-y:auto;
+    height:100vh;
+    height:100dvh;
+  }
+  .slide{
+    scroll-snap-align:start;
+    min-height:100vh;
+    min-height:100dvh;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    padding:88px 28px 40px;
+    text-align:center;
+    position:relative;
+  }
+  .slide-inner{
+    max-width:560px;
+    width:100%;
+    display:flex;
+    flex-direction:column;
+    gap:26px;
+    align-items:center;
+  }
+
+  .dark{ background:radial-gradient(120% 140% at 50% 0%, var(--wine-800) 0%, var(--wine-950) 72%); color:var(--cream-100); }
+  .light{ background:var(--cream-50); color:var(--ink-900); }
+  .offer-bg{ background:radial-gradient(140% 120% at 50% 100%, var(--wine-800) 0%, var(--wine-950) 78%); color:var(--cream-100); }
+
+  .mini-icon{
+    width:24px; height:24px;
+    color:var(--gold-600);
+    display:block;
+    margin:0 auto 6px;
+  }
+
+  .flourish{
+    display:flex;
+    align-items:center;
+    gap:9px;
+    color:var(--gold-600);
+  }
+  .flourish.on-light{ color:var(--wine-800); }
+  .fl-line{ width:30px; height:1px; background:currentColor; opacity:.65; }
+  .fl-diamond{ width:6px; height:6px; background:currentColor; transform:rotate(45deg); opacity:.9; }
+
+  .compare-label{ display:flex; align-items:center; gap:8px; font-size:.78rem; color:var(--gold-300); }
+  .compare-label .mini-icon{ width:16px; height:16px; margin:0; }
+
+  .quad-card .mini-icon{ color:var(--wine-800); }
+
+  .display-lg{ font-size:clamp(1.7rem, 5.4vw, 2.5rem); }
+  .display-md{ font-size:clamp(1.4rem, 4.4vw, 1.9rem); }
+
+  .lede{
+    font-size:1.05rem;
+    color:inherit;
+    opacity:.92;
+  }
+
+  .fine{
+    font-size:.92rem;
+    opacity:.78;
+  }
+
+  .btn{
+    appearance:none;
+    border:none;
+    cursor:pointer;
+    font-family:'Inter',sans-serif;
+    font-weight:600;
+    font-size:1rem;
+    padding:15px 30px;
+    border-radius:var(--radius);
+    background:var(--gold-600);
+    color:var(--wine-950);
+    transition:transform .15s ease, background .2s ease;
+  }
+  .btn:hover{ background:var(--gold-300); }
+  .btn:active{ transform:scale(0.98); }
+
+  .btn-ghost{
+    background:transparent;
+    border:1px solid var(--line);
+    color:inherit;
+  }
+  .btn-ghost:hover{ background:rgba(180,144,63,0.12); }
+
+  /* ---------- tela 3: linhas comparativas ---------- */
+  .compare{
+    width:100%;
+    display:flex;
+    flex-direction:column;
+    gap:14px;
+    padding:22px 18px;
+    border:1px solid var(--line);
+    border-radius:var(--radius);
+    background:rgba(244,238,224,0.04);
+  }
+  .compare-row{ display:flex; flex-direction:column; gap:10px; text-align:left; }
+  .compare-label{ font-size:.78rem; color:var(--gold-300); }
+  .compare-track{ display:flex; gap:8px; flex-wrap:wrap; }
+  .compare-chip{
+    font-family:'Fraunces',serif;
+    font-size:.86rem;
+    padding:7px 12px;
+    border:1px solid var(--line);
+    border-radius:var(--radius);
+  }
+
+  /* ---------- tela 4: quadrantes ---------- */
+  .quad-grid{
+    width:100%;
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:10px;
+  }
+  .quad-card{
+    border:1px solid var(--line);
+    padding:16px 10px;
+    border-radius:var(--radius);
+    display:flex;
+    flex-direction:column;
+    gap:6px;
+    background:rgba(244,238,224,0.04);
+  }
+  .quad-name{ font-family:'Fraunces',serif; font-size:1rem; }
+  .quad-tag{ font-size:.78rem; opacity:.75; line-height:1.4; }
+
+  /* ---------- tela 5: preview do guia ---------- */
+  .preview-strip{
+    display:flex;
+    gap:10px;
+    width:100%;
+    justify-content:center;
+  }
+  .preview-page{
+    flex:1;
+    max-width:150px;
+    aspect-ratio:3/4;
+    border:1px solid var(--line);
+    border-radius:var(--radius);
+    background:linear-gradient(160deg, rgba(180,144,63,.14), rgba(180,144,63,.02));
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    padding:10px;
+    font-family:'Fraunces',serif;
+    font-size:.78rem;
+    color:var(--gold-300);
+  }
+
+  /* ---------- oferta: cards ---------- */
+  .pack-grid{
+    width:100%;
+    display:flex;
+    flex-direction:column;
+    gap:16px;
+  }
+  .pack{
+    border:1px solid var(--line);
+    border-radius:var(--radius);
+    padding:24px 22px;
+    text-align:left;
+    background:rgba(244,238,224,0.03);
+    display:flex;
+    flex-direction:column;
+    gap:12px;
+  }
+  .pack.featured{
+    border-color:var(--gold-600);
+    background:rgba(180,144,63,0.09);
+  }
+  .pack-tag{
+    font-size:.78rem;
+    color:var(--gold-300);
+  }
+  .pack-name{ font-family:'Fraunces',serif; font-size:1.2rem; }
+  .pack-price{ font-family:'Fraunces',serif; font-size:1.9rem; }
+  .pack-was{ font-size:.85rem; opacity:.6; text-decoration:line-through; }
+  .pack-list{
+    list-style:none;
+    padding:0; margin:0;
+    display:flex; flex-direction:column; gap:6px;
+    font-size:.92rem;
+    opacity:.9;
+  }
+  .pack-list li::before{ content:"— "; opacity:.6; }
+
+  .guarantee{
+    display:flex; align-items:center; gap:10px;
+    font-size:.88rem; opacity:.85;
+    border-top:1px solid var(--line);
+    padding-top:16px;
+    margin-top:4px;
+  }
+
+  /* ---------- FAQ ---------- */
+  .faq{ width:100%; display:flex; flex-direction:column; gap:8px; text-align:left; }
+  .faq details{
+    border:1px solid var(--line);
+    border-radius:var(--radius);
+    padding:14px 16px;
+  }
+  .faq summary{
+    cursor:pointer;
+    font-family:'Fraunces',serif;
+    font-size:1rem;
+    list-style:none;
+  }
+  .faq summary::-webkit-details-marker{ display:none; }
+  .faq p{ margin-top:10px; font-size:.92rem; opacity:.85; }
+
+  footer{
+    padding:26px;
+    text-align:center;
+    font-size:.78rem;
+    opacity:.6;
+  }
+
+  /* ---------- modal de upsell ---------- */
+  .modal-overlay{
+    position:fixed; inset:0;
+    background:rgba(20,8,10,0.78);
+    display:none;
+    align-items:center;
+    justify-content:center;
+    z-index:100;
+    padding:20px;
+  }
+  .modal-overlay.open{ display:flex; }
+  .modal{
+    background:var(--cream-50);
+    color:var(--ink-900);
+    border-radius:var(--radius);
+    max-width:420px;
+    width:100%;
+    padding:30px 26px;
+    text-align:center;
+    display:flex;
+    flex-direction:column;
+    gap:16px;
+    border-top:3px solid var(--gold-600);
+  }
+  .modal h3{ font-size:1.3rem; }
+  .modal .btn-ghost{ border-color:rgba(74,58,50,0.3); color:var(--ink-900); font-size:.9rem; padding:10px 18px; }
+
+  @media (min-width:640px){
+    .quad-grid{ grid-template-columns:repeat(4,1fr); }
+  }
+</style>
+</head>
+<body>
+
+<svg style="display:none" aria-hidden="true">
+  <defs>
+    <symbol id="icon-scroll" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4">
+      <rect x="6" y="4" width="12" height="16" rx="1"/>
+      <circle cx="6" cy="4" r="2"/>
+      <circle cx="6" cy="20" r="2"/>
+      <line x1="9" y1="9" x2="15" y2="9"/>
+      <line x1="9" y1="13" x2="15" y2="13"/>
+    </symbol>
+    <symbol id="icon-path" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4">
+      <path d="M4 20 L9 8 L14 16 L20 4"/>
+      <circle cx="4" cy="20" r="1.6" fill="currentColor" stroke="none"/>
+      <circle cx="20" cy="4" r="1.6" fill="currentColor" stroke="none"/>
+    </symbol>
+    <symbol id="icon-globe" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4">
+      <circle cx="12" cy="12" r="8"/>
+      <ellipse cx="12" cy="12" rx="3.2" ry="8"/>
+      <line x1="4" y1="12" x2="20" y2="12"/>
+    </symbol>
+    <symbol id="icon-eye" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4">
+      <path d="M2 12 C6 6, 18 6, 22 12 C18 18, 6 18, 2 12 Z"/>
+      <circle cx="12" cy="12" r="2.6"/>
+    </symbol>
+    <symbol id="icon-book" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4">
+      <path d="M12 5 C10 4 6 4 4 5 V19 C6 18 10 18 12 19 C14 18 18 18 20 19 V5 C18 4 14 4 12 5 Z"/>
+      <line x1="12" y1="5" x2="12" y2="19"/>
+    </symbol>
+    <symbol id="icon-clock" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4">
+      <circle cx="12" cy="12" r="8.5"/>
+      <line x1="12" y1="12" x2="12" y2="7"/>
+      <line x1="12" y1="12" x2="15.5" y2="14"/>
+    </symbol>
+  </defs>
+</svg>
+
+<div class="progress-shell"><div class="progress-fill" id="progressFill"></div></div>
+
+<div class="track" id="track">
+
+  <!-- TELA 1 — Identificação -->
+  <section class="slide dark" id="s1">
+    <div class="slide-inner">
+      <div class="eyebrow-mark"></div>
+      <h1 class="display display-lg">Você já teve a sensação de conhecer várias histórias da Bíblia, mas não conseguir enxergar como tudo se conecta?</h1>
+      <button class="btn next-btn" data-next="s2">Sim, isso acontece comigo</button>
+    </div>
+  </section>
+
+  <!-- TELA 2 — Curiosidade -->
+  <section class="slide light" id="s2">
+    <div class="slide-inner">
+      <div class="eyebrow-mark" style="background:var(--wine-800)"></div>
+      <h2 class="display display-lg">Você conhece a Bíblia. Mas será que consegue enxergá-la?</h2>
+      <p class="lede">Vamos te mostrar algo que a maioria das pessoas nunca percebeu sobre a estrutura da Bíblia.</p>
+      <button class="btn next-btn" data-next="s3">Continuar</button>
+    </div>
+  </section>
+
+  <!-- TELA 3 — Microdescoberta 1 -->
+  <section class="slide dark" id="s3">
+    <div class="slide-inner">
+      <h2 class="display display-md">Você sabia que a Bíblia não foi escrita na ordem em que você lê?</h2>
+      <p class="lede">As cartas de Paulo, por exemplo, aparecem no cânon numa ordem — mas foram escritas em outra ordem, cronológica, completamente diferente.</p>
+
+      <div class="compare">
+        <div class="compare-row">
+          <span class="compare-label">ordem no cânon</span>
+          <div class="compare-track">
+            <span class="compare-chip">Romanos</span>
+            <span class="compare-chip">1 Coríntios</span>
+            <span class="compare-chip">Gálatas</span>
+            <span class="compare-chip">Efésios</span>
+          </div>
+        </div>
+        <div class="compare-row">
+          <span class="compare-label">ordem de escrita</span>
+          <div class="compare-track">
+            <span class="compare-chip">Gálatas</span>
+            <span class="compare-chip">1 Coríntios</span>
+            <span class="compare-chip">Romanos</span>
+            <span class="compare-chip">Efésios</span>
+          </div>
+        </div>
+      </div>
+
+      <button class="btn next-btn" data-next="s4">Isso muda tudo, continuar</button>
+    </div>
+  </section>
+
+  <!-- TELA 4 — Microdescoberta 2 + amplificação -->
+  <section class="slide light" id="s4">
+    <div class="slide-inner">
+      <h2 class="display display-md">E os 4 Evangelhos? Cada um foi escrito para um público diferente, com uma ênfase diferente sobre a mesma história.</h2>
+
+      <div class="quad-grid">
+        <div class="quad-card">
+          <span class="quad-name">Mateus</span>
+          <span class="quad-tag">Escreve pra convencer judeus de que Jesus é o Messias prometido.</span>
+        </div>
+        <div class="quad-card">
+          <span class="quad-name">Marcos</span>
+          <span class="quad-tag">Narra em ritmo rápido, focado na ação, pra um público romano habituado a agir.</span>
+        </div>
+        <div class="quad-card">
+          <span class="quad-name">Lucas</span>
+          <span class="quad-tag">Escreve com detalhe histórico, pra mostrar que Jesus é Salvador de todos, não só dos judeus.</span>
+        </div>
+        <div class="quad-card">
+          <span class="quad-name">João</span>
+          <span class="quad-tag">Deixa de lado a cronologia e foca em provar a divindade de Jesus.</span>
+        </div>
+      </div>
+
+      <p class="lede" style="text-align:left;">Percebeu o que aconteceu? Você pode conhecer os livros, os personagens, as histórias — cada um separadamente — mas sem ver o mapa completo, eles continuam parecendo peças soltas.</p>
+
+      <button class="btn next-btn" data-next="s5">Quero ver o mapa completo</button>
+    </div>
+  </section>
+
+  <!-- TELA 5 — Mecanismo / produto -->
+  <section class="slide dark" id="s5">
+    <div class="slide-inner">
+      <h2 class="display display-md">Foi por isso que criamos A Bíblia de Cima.</h2>
+      <p class="lede">Um guia visual mostrando como os 66 livros se conectam, do Gênesis ao Apocalipse. Não é um curso de teologia. É o mapa que faltava.</p>
+
+      <img src="img/capa-principal.jpg" alt="Capa do guia A Bíblia de Cima" style="max-width:260px; width:100%; border-radius:var(--radius);">
+      <p class="fine">Prévia das páginas internas será adicionada assim que o miolo estiver diagramado com o texto final.</p>
+
+      <button class="btn next-btn" data-next="s5b">Quero conhecer</button>
+    </div>
+  </section>
+
+  <!-- TELA 5B — Autoridade / quem está por trás -->
+  <section class="slide light" id="s5b">
+    <div class="slide-inner">
+      <img src="img/logo-abba-palavra.png" alt="Logo ABBA PALAVRA" style="max-width:90px; width:100%;">
+      <div class="eyebrow-mark" style="background:var(--wine-800)"></div>
+      <h2 class="display display-md">Quem está por trás do ABBA PALAVRA?</h2>
+      <p class="lede" style="text-align:left;">O ABBA PALAVRA nasceu com uma missão simples: tornar o conhecimento por trás das Escrituras mais acessível para quem ama a Bíblia e deseja estudá-la com mais profundidade. Não queremos transformar você em um acadêmico — queremos abrir a porta para um universo que durante muito tempo pareceu reservado a especialistas.</p>
+      <p class="lede" style="text-align:left;">A Bíblia é profunda. Mergulhar nela pode ser fascinante.</p>
+      <button class="btn next-btn" data-next="s6">Continuar</button>
+    </div>
+  </section>
+
+  <!-- TELA 6 — Oferta -->
+  <section class="slide offer-bg" id="s6">
+    <div class="slide-inner">
+      <h2 class="display display-md">A Bíblia de Cima</h2>
+      <p class="fine">Você acabou de ver 2 exemplos de como pequenas conexões mudam sua leitura. Imagine isso aplicado à Bíblia inteira.</p>
+      <p class="lede">Veja como os 66 livros se conectam — e nunca mais leia a Bíblia aos pedaços.</p>
+      <p class="fine">Guia avaliado em R$47,90 — hoje por uma fração disso.</p>
+
+      <img src="img/colecao-completa.jpg" alt="A Bíblia de Cima e os 3 bônus: Ficha de Consulta Rápida, Guia de Gêneros Literários e Mapa de Conexões" style="max-width:320px; width:100%; border-radius:var(--radius);">
+
+      <img src="img/bonus-banner.jpg" alt="3 Bônus Exclusivos — uma jornada completa pelas Escrituras" style="max-width:420px; width:100%; border-radius:var(--radius); margin-top:6px;">
+      <div style="display:flex; gap:8px; width:100%;">
+        <img src="img/bonus-ficha.png" alt="Prévia do bônus Ficha de Consulta Rápida dos 66 Livros" style="width:33.3%; border-radius:var(--radius);">
+        <img src="img/bonus-generos.png" alt="Prévia do bônus Guia de Como Ler Cada Gênero Literário" style="width:33.3%; border-radius:var(--radius);">
+        <img src="img/bonus-mapa.png" alt="Prévia do bônus Mapa de Conexões Entre os Testamentos" style="width:33.3%; border-radius:var(--radius);">
+      </div>
+
+      <div class="pack-grid">
+        <div class="pack" id="packBasico">
+          <span class="pack-tag">pacote básico</span>
+          <span class="pack-name">A Bíblia de Cima</span>
+          <span class="pack-price">R$5,70</span>
+          <ul class="pack-list">
+            <li>Guia completo em PDF</li>
+            <li>Acesso pela área de membros</li>
+          </ul>
+          <button class="btn" id="btnBasico">Quero o Básico</button>
+        </div>
+
+        <div class="pack featured" id="packCompleto">
+          <span class="pack-tag">mais escolhido</span>
+          <span class="pack-name">A Bíblia de Cima + 3 bônus</span>
+          <span class="pack-was">De R$21,40</span>
+          <span class="pack-price">R$15,70</span>
+          <ul class="pack-list">
+            <li>Guia completo em PDF</li>
+            <li>Ficha de Consulta Rápida dos 66 Livros</li>
+            <li>Guia de Como Ler Cada Gênero Literário</li>
+            <li>Mapa de Conexões Entre os Testamentos</li>
+          </ul>
+          <button class="btn" id="btnCompleto">Quero o Completo</button>
+        </div>
+      </div>
+
+      <div class="guarantee">
+        <span>Garantia de 7 dias. Se não fizer sentido pra você, devolvemos o valor.</span>
+      </div>
+
+      <div class="faq">
+        <details>
+          <summary>O material é físico ou digital?</summary>
+          <p>Totalmente digital. Assim que sua compra é aprovada, o material fica disponível na sua área de membros para download.</p>
+        </details>
+        <details>
+          <summary>Preciso saber teologia para entender?</summary>
+          <p>Não. O guia é feito para quem já lê a Bíblia, mas nunca teve a estrutura geral explicada de forma simples.</p>
+        </details>
+        <details>
+          <summary>Posso imprimir?</summary>
+          <p>Sim, é um PDF. Você pode imprimir ou usar direto do celular ou computador.</p>
+        </details>
+        <details>
+          <summary>Serve para estudo em grupo ou ensino também?</summary>
+          <p>Sim, muita gente usa como apoio para estudo pessoal, em família, célula ou discipulado.</p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+</div>
+
+<!-- MODAL — upsell pré-checkout -->
+<div class="modal-overlay" id="upsellModal">
+  <div class="modal">
+    <h3>Espere! Libere os 3 bônus por apenas R$4,20 a mais</h3>
+    <p>Leve o Pacote Completo por R$9,90, com acesso ao guia principal e aos 3 materiais extras. De R$15,70 por R$9,90.</p>
+    <button class="btn" id="btnAceitarUpsell">Quero o Pacote Completo por R$9,90</button>
+    <button class="btn-ghost" id="btnRecusarUpsell">Não, quero seguir com o básico por R$5,70</button>
+  </div>
+</div>
+
+<script>
+  // ------------------------------------------------------------
+  // Substitua estes três links pelos links reais de checkout da Cakto
+  // ------------------------------------------------------------
+  const LINK_BASICO = "https://pay.cakto.com.br/nrjsucd_1098540";
+  const LINK_COMPLETO = "https://pay.cakto.com.br/g2zczxd";
+  const LINK_COMPLETO_CUPOM = "https://pay.cakto.com.br/g2zczxd?coupon=desc1";
+
+  const track = document.getElementById('track');
+  const slides = Array.from(document.querySelectorAll('.slide'));
+  const progressFill = document.getElementById('progressFill');
+
+  // avança a tela ao clicar em qualquer botão "next"
+  document.querySelectorAll('.next-btn').forEach(btn => {
+    btn.addEventListener('click', () => {
+      const targetId = btn.getAttribute('data-next');
+      document.getElementById(targetId).scrollIntoView({behavior:'smooth'});
+    });
+  });
+
+  // atualiza a barra de progresso conforme a tela visível
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        const index = slides.indexOf(entry.target);
+        const pct = ((index + 1) / slides.length) * 100;
+        progressFill.style.width = pct + "%";
+      }
+    });
+  }, { root: track, threshold: 0.6 });
+
+  slides.forEach(s => observer.observe(s));
+
+  // oferta: pacote completo -> checkout direto
+  document.getElementById('btnCompleto').addEventListener('click', () => {
+    window.location.href = LINK_COMPLETO;
+  });
+
+  // oferta: pacote básico -> abre modal de upsell antes de ir pro checkout
+  const modal = document.getElementById('upsellModal');
+  document.getElementById('btnBasico').addEventListener('click', () => {
+    modal.classList.add('open');
+  });
+  document.getElementById('btnAceitarUpsell').addEventListener('click', () => {
+    window.location.href = LINK_COMPLETO_CUPOM;
+  });
+  document.getElementById('btnRecusarUpsell').addEventListener('click', () => {
+    window.location.href = LINK_BASICO;
+  });
+</script>
+
+<footer>
+  A Bíblia de Cima — material digital educacional. Todos os direitos reservados.
+</footer>
+
+</body>
+</html>
