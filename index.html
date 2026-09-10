@@ -3,8 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>A Bíblia de Cima — Veja como os 66 livros se conectam</title>
-<meta name="description" content="Um guia visual para você entender como a Lei, os Profetas, os Evangelhos e as Cartas se encaixam numa única história.">
+<title>A Bíblia de Cima — Enxergue como os 66 livros se conectam</title>
+<meta name="description" content="Um guia visual para enxergar como os 66 livros da Bíblia se conectam, do Gênesis ao Apocalipse — sem transformar seu estudo em um curso de teologia.">
 
 <!-- Meta Pixel Code -->
 <script>
@@ -334,6 +334,18 @@ src="https://www.facebook.com/tr?id=938653842041574&ev=PageView&noscript=1"
   .modal h3{ font-size:1.3rem; }
   .modal .btn-ghost{ border-color:rgba(74,58,50,0.3); color:var(--ink-900); font-size:.9rem; padding:10px 18px; }
 
+
+  .screen-label{font-size:.72rem;font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:var(--gold-300);opacity:.9;}
+  .screen-label.on-light{color:var(--wine-800);}
+  .insight{width:100%;border-left:2px solid var(--gold-600);padding:12px 16px;text-align:left;background:rgba(180,144,63,.07);font-size:.92rem;line-height:1.55;}
+  .proof-grid{width:100%;display:grid;grid-template-columns:1fr;gap:10px;text-align:left;}
+  .proof-card{border:1px solid var(--line);padding:15px 16px;border-radius:var(--radius);background:rgba(244,238,224,.04);}
+  .proof-card strong{display:block;font-family:'Fraunces',serif;font-size:1rem;margin-bottom:5px;}
+  .proof-card span{font-size:.84rem;line-height:1.45;opacity:.82;}
+  .trust-line{display:flex;flex-wrap:wrap;justify-content:center;gap:8px 16px;font-size:.76rem;opacity:.72;}
+  .btn{min-width:220px;}
+  @media (max-width:639px){.slide{padding-left:20px;padding-right:20px;}.btn{width:100%;}}
+
   @media (min-width:640px){
     .quad-grid{ grid-template-columns:repeat(4,1fr); }
   }
@@ -383,8 +395,9 @@ src="https://www.facebook.com/tr?id=938653842041574&ev=PageView&noscript=1"
   <!-- TELA 1 — Identificação -->
   <section class="slide dark" id="s1">
     <div class="slide-inner">
-      <div class="eyebrow-mark"></div>
+      <span class="screen-label">Vamos começar pelo que você já vive</span>
       <h1 class="display display-lg">Você já teve a sensação de conhecer várias histórias da Bíblia, mas não conseguir enxergar como tudo se conecta?</h1>
+      <p class="fine">Você conhece partes da Bíblia. A questão é conseguir enxergar o todo.</p>
       <button class="btn next-btn" data-next="s2">Sim, isso acontece comigo</button>
     </div>
   </section>
@@ -392,18 +405,20 @@ src="https://www.facebook.com/tr?id=938653842041574&ev=PageView&noscript=1"
   <!-- TELA 2 — Curiosidade -->
   <section class="slide light" id="s2">
     <div class="slide-inner">
-      <div class="eyebrow-mark" style="background:var(--wine-800)"></div>
+      <span class="screen-label on-light">Antes de continuar</span>
       <h2 class="display display-lg">Você conhece a Bíblia. Mas será que consegue enxergá-la?</h2>
-      <p class="lede">Vamos te mostrar algo que a maioria das pessoas nunca percebeu sobre a estrutura da Bíblia.</p>
-      <button class="btn next-btn" data-next="s3">Continuar</button>
+      <p class="lede">Nos próximos passos, você vai perceber como algumas conexões mudam a forma de enxergar a Bíblia.</p>
+      <div class="insight">Não é uma prova de quanto você sabe. É uma experiência para mostrar a diferença entre <strong>conhecer partes</strong> e <strong>enxergar a estrutura</strong>.</div>
+      <button class="btn next-btn" data-next="s3">Quero continuar</button>
     </div>
   </section>
 
   <!-- TELA 3 — Microdescoberta 1 -->
   <section class="slide dark" id="s3">
     <div class="slide-inner">
-      <h2 class="display display-md">Você sabia que a Bíblia não foi escrita na ordem em que você lê?</h2>
-      <p class="lede">As cartas de Paulo, por exemplo, aparecem no cânon numa ordem — mas foram escritas em outra ordem, cronológica, completamente diferente.</p>
+      <span class="screen-label">Pequena descoberta #1</span>
+      <h2 class="display display-md">A ordem em que você encontra os livros na Bíblia não conta toda a história.</h2>
+      <p class="lede">As cartas de Paulo, por exemplo, aparecem no cânon em uma determinada sequência. A ordem em que foram escritas é discutida pelos estudiosos e não precisa coincidir com essa sequência.</p>
 
       <div class="compare">
         <div class="compare-row">
@@ -416,7 +431,7 @@ src="https://www.facebook.com/tr?id=938653842041574&ev=PageView&noscript=1"
           </div>
         </div>
         <div class="compare-row">
-          <span class="compare-label">ordem de escrita</span>
+          <span class="compare-label">uma possível reconstrução cronológica</span>
           <div class="compare-track">
             <span class="compare-chip">Gálatas</span>
             <span class="compare-chip">1 Coríntios</span>
@@ -426,36 +441,37 @@ src="https://www.facebook.com/tr?id=938653842041574&ev=PageView&noscript=1"
         </div>
       </div>
 
-      <button class="btn next-btn" data-next="s4">Isso muda tudo, continuar</button>
+      <button class="btn next-btn" data-next="s4">Quero ver outra conexão</button>
     </div>
   </section>
 
   <!-- TELA 4 — Microdescoberta 2 + amplificação -->
   <section class="slide light" id="s4">
     <div class="slide-inner">
-      <h2 class="display display-md">E os 4 Evangelhos? Cada um foi escrito para um público diferente, com uma ênfase diferente sobre a mesma história.</h2>
+      <h2 class="display display-md">E os 4 Evangelhos? A mesma história aparece com ênfases diferentes.</h2>
 
       <div class="quad-grid">
         <div class="quad-card">
           <span class="quad-name">Mateus</span>
-          <span class="quad-tag">Escreve pra convencer judeus de que Jesus é o Messias prometido.</span>
+          <span class="quad-tag">Apresenta Jesus em forte diálogo com as promessas e expectativas judaicas.</span>
         </div>
         <div class="quad-card">
           <span class="quad-name">Marcos</span>
-          <span class="quad-tag">Narra em ritmo rápido, focado na ação, pra um público romano habituado a agir.</span>
+          <span class="quad-tag">Tem narrativa dinâmica e forte ênfase nas ações e acontecimentos.</span>
         </div>
         <div class="quad-card">
           <span class="quad-name">Lucas</span>
-          <span class="quad-tag">Escreve com detalhe histórico, pra mostrar que Jesus é Salvador de todos, não só dos judeus.</span>
+          <span class="quad-tag">Apresenta uma narrativa detalhada e destaca o alcance universal da missão de Jesus.</span>
         </div>
         <div class="quad-card">
           <span class="quad-name">João</span>
-          <span class="quad-tag">Deixa de lado a cronologia e foca em provar a divindade de Jesus.</span>
+          <span class="quad-tag">Traz uma ênfase marcante na identidade e divindade de Jesus.</span>
         </div>
       </div>
 
-      <p class="lede" style="text-align:left;">Percebeu o que aconteceu? Você pode conhecer os livros, os personagens, as histórias — cada um separadamente — mas sem ver o mapa completo, eles continuam parecendo peças soltas.</p>
+      <p class="lede" style="text-align:left;">Percebeu o que aconteceu? Você pode conhecer os livros, os personagens e as histórias — cada um separadamente — mas, sem enxergar as conexões, eles continuam parecendo peças soltas.</p>
 
+      <div class="insight">É exatamente essa lacuna que queremos resolver: <strong>menos peças soltas, mais visão do todo.</strong></div>
       <button class="btn next-btn" data-next="s5">Quero ver o mapa completo</button>
     </div>
   </section>
@@ -463,13 +479,19 @@ src="https://www.facebook.com/tr?id=938653842041574&ev=PageView&noscript=1"
   <!-- TELA 5 — Mecanismo / produto -->
   <section class="slide dark" id="s5">
     <div class="slide-inner">
+      <span class="screen-label">O mecanismo</span>
       <h2 class="display display-md">Foi por isso que criamos A Bíblia de Cima.</h2>
-      <p class="lede">Um guia visual mostrando como os 66 livros se conectam, do Gênesis ao Apocalipse. Não é um curso de teologia. É o mapa que faltava.</p>
+      <p class="lede">Um guia visual para enxergar como os 66 livros se conectam, do Gênesis ao Apocalipse.</p>
 
       <img src="img/capa-principal.jpg" alt="Capa do guia A Bíblia de Cima" style="max-width:260px; width:100%; border-radius:var(--radius);">
-      <p class="fine">Prévia das páginas internas será adicionada assim que o miolo estiver diagramado com o texto final.</p>
+      <div class="proof-grid">
+        <div class="proof-card"><strong>Estrutura dos 66 livros</strong><span>Uma visão organizada para localizar cada parte dentro do todo.</span></div>
+        <div class="proof-card"><strong>Conexões entre os testamentos</strong><span>Para perceber relações que ficam difíceis de enxergar quando você lê os livros isoladamente.</span></div>
+        <div class="proof-card"><strong>Feito para consultar</strong><span>Material digital para estudar no seu ritmo, pelo celular, computador ou impresso.</span></div>
+      </div>
+      <div class="insight">Não é um curso de teologia. É uma ferramenta visual para ajudar você a <strong>enxergar a Bíblia como um todo</strong>.</div>
 
-      <button class="btn next-btn" data-next="s5b">Quero conhecer</button>
+      <button class="btn next-btn" data-next="s5b">Quero conhecer o ABBA PALAVRA</button>
     </div>
   </section>
 
@@ -477,21 +499,22 @@ src="https://www.facebook.com/tr?id=938653842041574&ev=PageView&noscript=1"
   <section class="slide light" id="s5b">
     <div class="slide-inner">
       <img src="img/logo-abba-palavra.png" alt="Logo ABBA PALAVRA" style="max-width:90px; width:100%;">
-      <div class="eyebrow-mark" style="background:var(--wine-800)"></div>
-      <h2 class="display display-md">Quem está por trás do ABBA PALAVRA?</h2>
-      <p class="lede" style="text-align:left;">O ABBA PALAVRA nasceu com uma missão simples: tornar o conhecimento por trás das Escrituras mais acessível para quem ama a Bíblia e deseja estudá-la com mais profundidade. Não queremos transformar você em um acadêmico — queremos abrir a porta para um universo que durante muito tempo pareceu reservado a especialistas.</p>
-      <p class="lede" style="text-align:left;">A Bíblia é profunda. Mergulhar nela pode ser fascinante.</p>
-      <button class="btn next-btn" data-next="s6">Continuar</button>
+      <span class="screen-label on-light">Quem está por trás</span>
+      <h2 class="display display-md">Conhecimento bíblico pode ser profundo sem precisar ser complicado.</h2>
+      <p class="lede" style="text-align:left;">O ABBA PALAVRA nasceu com a missão de tornar o conhecimento por trás das Escrituras mais acessível para quem ama a Bíblia e quer estudá-la com mais clareza.</p>
+      <p class="lede" style="text-align:left;">A Bíblia é profunda. A forma de enxergá-la pode ser simples.</p>
+      <button class="btn next-btn" data-next="s6">Quero ver o material completo</button>
     </div>
   </section>
 
   <!-- TELA 6 — Oferta -->
   <section class="slide offer-bg" id="s6">
     <div class="slide-inner">
-      <h2 class="display display-md">A Bíblia de Cima</h2>
+      <span class="screen-label">Agora você já viu o porquê</span>
+      <h2 class="display display-md">Leve A Bíblia de Cima para continuar enxergando o todo.</h2>
       <p class="fine">Você acabou de ver 2 exemplos de como pequenas conexões mudam sua leitura. Imagine isso aplicado à Bíblia inteira.</p>
       <p class="lede">Veja como os 66 livros se conectam — e nunca mais leia a Bíblia aos pedaços.</p>
-      <p class="fine">Guia avaliado em R$47,90 — hoje por uma fração disso.</p>
+      <p class="fine">Valor de referência do guia: R$47,90. Hoje, você pode começar por uma fração desse valor.</p>
 
       <div style="display:flex; gap:8px; width:100%;">
         <img src="img/bonus-ficha.png" alt="Prévia do bônus Ficha de Consulta Rápida dos 66 Livros" style="width:33.3%; border-radius:var(--radius);">
@@ -530,6 +553,8 @@ src="https://www.facebook.com/tr?id=938653842041574&ev=PageView&noscript=1"
         <span>Garantia de 7 dias. Se não fizer sentido pra você, devolvemos o valor.</span>
       </div>
 
+      <div class="trust-line"><span>✓ Acesso digital</span><span>✓ PDF para consultar e imprimir</span><span>✓ Garantia de 7 dias</span></div>
+
       <div class="faq">
         <details>
           <summary>O material é físico ou digital?</summary>
@@ -544,8 +569,12 @@ src="https://www.facebook.com/tr?id=938653842041574&ev=PageView&noscript=1"
           <p>Sim, é um PDF. Você pode imprimir ou usar direto do celular ou computador.</p>
         </details>
         <details>
+          <summary>Isso é para iniciantes ou para quem já conhece a Bíblia?</summary>
+          <p>O material foi pensado especialmente para quem já tem contato com a Bíblia, conhece histórias e livros, mas sente falta de uma visão geral que organize tudo. Se você está começando, ele também pode servir como mapa de consulta.</p>
+        </details>
+        <details>
           <summary>Serve para estudo em grupo ou ensino também?</summary>
-          <p>Sim, muita gente usa como apoio para estudo pessoal, em família, célula ou discipulado.</p>
+          <p>Sim. O material pode ser usado como apoio em estudo pessoal, família, célula, discipulado e momentos de ensino.</p>
         </details>
       </div>
     </div>
@@ -557,7 +586,7 @@ src="https://www.facebook.com/tr?id=938653842041574&ev=PageView&noscript=1"
 <div class="modal-overlay" id="upsellModal">
   <div class="modal">
     <h3>Espere! Libere os 3 bônus por apenas R$4,20 a mais</h3>
-    <p>Leve o Pacote Completo por R$9,90, com acesso ao guia principal e aos 3 materiais extras. De R$15,70 por R$9,90.</p>
+    <p>Se você escolher o básico por R$5,70, esta condição permite adicionar o Pacote Completo por R$9,90 no total. Os 3 bônus entram junto com o guia.</p>
     <button class="btn" id="btnAceitarUpsell">Quero o Pacote Completo por R$9,90</button>
     <button class="btn-ghost" id="btnRecusarUpsell">Não, quero seguir com o básico por R$5,70</button>
   </div>
