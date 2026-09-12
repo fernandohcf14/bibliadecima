@@ -4,7 +4,8 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>A Bíblia de Cima — Enxergue como os 66 livros se conectam</title>
-<meta name="description" content="Um guia visual para enxergar como os 66 livros da Bíblia se conectam, do Gênesis ao Apocalipse — sem transformar seu estudo em um curso de teologia.">
+<meta name="description" content="Um guia visual para enxergar como os 66 livros da Bíblia se conectam, do Gênesis ao Apocalipse, com mais clareza e visão do todo.">
+<meta name="theme-color" content="#17120e">
 
 <!-- Meta Pixel Code -->
 <script>
@@ -19,19 +20,17 @@ s.parentNode.insertBefore(t,s)}(window, document,'script',
 fbq('init', '938653842041574');
 fbq('track', 'PageView');
 </script>
-<noscript><img height="1" width="1" style="display:none"
-src="https://www.facebook.com/tr?id=938653842041574&ev=PageView&noscript=1"
-/></noscript>
+<noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=938653842041574&ev=PageView&noscript=1" alt=""></noscript>
 <!-- End Meta Pixel Code -->
 
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-63Y3BPN5WP"></script>
 <script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-  gtag('config', 'G-63Y3BPN5WP');
-  gtag('config', 'AW-18445909721');
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'G-63Y3BPN5WP');
+gtag('config', 'AW-18445909721');
 </script>
 
 <!-- TikTok Pixel Code Start -->
@@ -46,679 +45,614 @@ src="https://www.facebook.com/tr?id=938653842041574&ev=PageView&noscript=1"
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 
 <style>
-  :root{
-    --wine-950:#2E0F13;
-    --wine-900:#4A1418;
-    --wine-800:#5E1A1F;
-    --gold-600:#B4903F;
-    --gold-300:#D9C08A;
-    --cream-100:#F4EEE0;
-    --cream-50:#FAF6EC;
-    --ink-900:#241713;
-    --ink-700:#4A3A32;
-    --line:rgba(180,144,63,0.35);
-    --radius:2px;
-  }
+:root{
+  --bg:#17120e;
+  --bg-2:#211913;
+  --wine:#52171e;
+  --wine-2:#6d2028;
+  --paper:#f6f0e5;
+  --paper-2:#fffaf0;
+  --ink:#241b15;
+  --muted:#6b5d50;
+  --gold:#c29c54;
+  --gold-2:#e0c487;
+  --line:rgba(194,156,84,.25);
+  --line-dark:rgba(36,27,21,.12);
+  --success:#2d6b4b;
+  --shadow:0 28px 80px rgba(0,0,0,.22);
+  --radius:24px;
+  --radius-sm:16px;
+  --max:1180px;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;font-family:'Inter',sans-serif;background:var(--paper);color:var(--ink);-webkit-font-smoothing:antialiased;overflow-x:hidden}
+body.no-scroll{overflow:hidden}
+img{max-width:100%;display:block}
+a{text-decoration:none;color:inherit}
+button{font:inherit}
+::selection{background:var(--gold-2);color:var(--ink)}
 
-  *{box-sizing:border-box;}
-  html{scroll-behavior:smooth;}
+.scroll-progress{position:fixed;top:0;left:0;right:0;height:3px;z-index:9999;background:rgba(194,156,84,.12)}
+.scroll-progress span{display:block;height:100%;width:0;background:linear-gradient(90deg,var(--gold),var(--gold-2));box-shadow:0 0 18px rgba(224,196,135,.55)}
 
-  body{
-    margin:0;
-    font-family:'Inter', sans-serif;
-    color:var(--ink-900);
-    background:var(--cream-50);
-    -webkit-font-smoothing:antialiased;
-  }
+.container{width:min(var(--max),calc(100% - 40px));margin-inline:auto}
+.section{padding:110px 0;position:relative}
+.section-dark{background:var(--bg);color:var(--paper)}
+.section-wine{background:linear-gradient(140deg,#3a1016,#641c25 62%,#2a0d11);color:var(--paper)}
+.section-paper{background:var(--paper)}
+.section-cream{background:var(--paper-2)}
+.kicker{display:inline-flex;align-items:center;gap:9px;font-size:.78rem;font-weight:800;text-transform:uppercase;letter-spacing:.14em;color:var(--wine)}
+.section-dark .kicker,.section-wine .kicker{color:var(--gold-2)}
+.kicker::before{content:"";width:28px;height:1px;background:currentColor}
+h1,h2,h3{font-family:'Cormorant Garamond',serif;margin:0;line-height:.98;letter-spacing:-.02em}
+h1{font-size:clamp(3.25rem,7.6vw,6.6rem);font-weight:600}
+h2{font-size:clamp(2.55rem,5.2vw,4.8rem);font-weight:600}
+h3{font-size:clamp(1.65rem,3vw,2.3rem);font-weight:600}
+p{margin:0;line-height:1.72}
+.lead{font-size:clamp(1.05rem,1.8vw,1.28rem);line-height:1.65;color:var(--muted)}
+.section-dark .lead,.section-wine .lead{color:rgba(246,240,229,.78)}
+.gold{color:var(--gold-2)}
+.wine{color:var(--wine)}
 
-  h1,h2,h3,.display{
-    font-family:'Fraunces', serif;
-    font-weight:500;
-    line-height:1.15;
-    letter-spacing:-0.01em;
-    margin:0;
-  }
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:56px;padding:15px 24px;border:1px solid transparent;border-radius:999px;background:linear-gradient(135deg,var(--gold-2),var(--gold));color:#1f160d;font-weight:800;cursor:pointer;box-shadow:0 14px 36px rgba(0,0,0,.16);transition:transform .25s ease,box-shadow .25s ease,filter .25s ease;position:relative;overflow:hidden}
+.btn::after{content:"";position:absolute;top:-120%;left:-35%;width:24%;height:330%;background:rgba(255,255,255,.33);transform:rotate(22deg) translateX(-170px);transition:transform .7s ease}
+.btn:hover{transform:translateY(-3px);box-shadow:0 18px 46px rgba(0,0,0,.22);filter:saturate(1.08)}
+.btn:hover::after{transform:rotate(22deg) translateX(520px)}
+.btn-dark{background:var(--bg);color:var(--paper);border-color:rgba(255,255,255,.08)}
+.btn-outline{background:transparent;color:inherit;border-color:currentColor;box-shadow:none}
+.btn-small{min-height:44px;padding:10px 18px;font-size:.88rem}
 
-  p{
-    line-height:1.6;
-    margin:0;
-  }
+.top-note{background:#0f0c09;color:rgba(255,255,255,.72);font-size:.78rem;text-align:center;padding:9px 16px;border-bottom:1px solid rgba(255,255,255,.06)}
+.nav-wrap{position:sticky;top:0;z-index:1000;background:rgba(246,240,229,.88);backdrop-filter:blur(18px);border-bottom:1px solid rgba(36,27,21,.08)}
+.nav{height:74px;display:flex;align-items:center;justify-content:space-between;gap:24px}
+.brand{display:flex;align-items:center;gap:10px;font-family:'Cormorant Garamond',serif;font-size:1.2rem;font-weight:700}
+.brand img{width:42px;height:42px;object-fit:contain;border-radius:10px;background:#fff}
+.nav-links{display:flex;align-items:center;gap:28px;font-size:.9rem;color:#4e4035}
+.nav-links a{transition:color .2s ease}.nav-links a:hover{color:var(--wine)}
 
-  a{color:inherit;}
+.hero{min-height:calc(100vh - 108px);background:radial-gradient(circle at 78% 28%,rgba(194,156,84,.18),transparent 33%),linear-gradient(135deg,#140f0c,#261a12 62%,#120e0b);color:var(--paper);display:flex;align-items:center;position:relative;overflow:hidden;padding:88px 0}
+.hero::before{content:"";position:absolute;inset:-30%;background-image:linear-gradient(rgba(194,156,84,.035) 1px,transparent 1px),linear-gradient(90deg,rgba(194,156,84,.035) 1px,transparent 1px);background-size:58px 58px;mask-image:radial-gradient(circle at center,#000,transparent 72%);animation:gridDrift 18s linear infinite}
+@keyframes gridDrift{to{transform:translate3d(58px,58px,0)}}
+.hero-grid{display:grid;grid-template-columns:1.02fr .98fr;align-items:center;gap:64px;position:relative;z-index:2}
+.hero-copy{max-width:670px}
+.hero-copy .kicker{margin-bottom:22px}
+.hero-copy h1{max-width:720px}
+.hero-copy h1 em{font-style:normal;color:var(--gold-2);text-shadow:0 0 40px rgba(224,196,135,.12)}
+.hero-copy .lead{max-width:640px;margin-top:26px;font-size:clamp(1.08rem,1.7vw,1.34rem)}
+.hero-actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:34px}
+.hero-trust{display:flex;flex-wrap:wrap;gap:10px 20px;margin-top:28px;font-size:.82rem;color:rgba(246,240,229,.7)}
+.hero-trust span::before{content:"✓";color:var(--gold-2);margin-right:7px;font-weight:900}
+.hero-visual{position:relative;perspective:1200px;display:grid;place-items:center;min-height:630px}
+.hero-aura{position:absolute;width:520px;height:520px;border-radius:50%;background:radial-gradient(circle,rgba(224,196,135,.22),rgba(194,156,84,.04) 47%,transparent 70%);filter:blur(4px);animation:aura 4.8s ease-in-out infinite}
+@keyframes aura{50%{transform:scale(1.08);opacity:.78}}
+.hero-img{width:min(500px,94%);border-radius:30px;box-shadow:0 38px 100px rgba(0,0,0,.5);transform:rotateY(-4deg) rotateX(2deg);transition:transform .18s ease-out;position:relative;z-index:2}
+.float-badge{position:absolute;z-index:3;display:flex;align-items:center;gap:9px;background:rgba(20,15,12,.82);border:1px solid rgba(224,196,135,.28);backdrop-filter:blur(12px);padding:12px 15px;border-radius:999px;font-size:.78rem;color:#f7efdf;box-shadow:0 14px 40px rgba(0,0,0,.24)}
+.float-badge b{color:var(--gold-2)}
+.badge-a{left:-8px;top:20%;animation:floaty 4.8s ease-in-out infinite}
+.badge-b{right:-4px;bottom:20%;animation:floaty 5.4s ease-in-out infinite reverse}
+@keyframes floaty{50%{transform:translateY(-10px)}}
 
-  /* ---------- progress bar ---------- */
-  .progress-shell{
-    position:fixed;
-    top:0; left:0; right:0;
-    height:4px;
-    background:rgba(180,144,63,0.18);
-    z-index:50;
-  }
-  .progress-fill{
-    height:100%;
-    width:0%;
-    background:linear-gradient(90deg,var(--gold-600),var(--gold-300));
-    transition:width .45s ease;
-  }
+.signal-strip{background:#fff;border-bottom:1px solid var(--line-dark)}
+.signal-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:0}
+.signal{padding:25px 20px;text-align:center;border-right:1px solid var(--line-dark)}
+.signal:last-child{border-right:0}
+.signal strong{display:block;font-family:'Cormorant Garamond',serif;font-size:1.55rem;color:var(--wine)}
+.signal span{font-size:.78rem;color:var(--muted)}
 
-  /* ---------- slides ---------- */
-  .track{
-    scroll-snap-type:y mandatory;
-    overflow-y:auto;
-    height:100vh;
-    height:100dvh;
-  }
-  .slide{
-    scroll-snap-align:start;
-    min-height:100vh;
-    min-height:100dvh;
-    display:flex;
-    flex-direction:column;
-    justify-content:center;
-    align-items:center;
-    padding:88px 28px 40px;
-    text-align:center;
-    position:relative;
-  }
-  .slide-inner{
-    max-width:560px;
-    width:100%;
-    display:flex;
-    flex-direction:column;
-    gap:26px;
-    align-items:center;
-  }
+.problem-grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:72px;align-items:start}
+.sticky-title{position:sticky;top:120px}
+.sticky-title .lead{margin-top:22px;max-width:460px}
+.problem-list{display:grid;gap:18px}
+.problem-card{padding:28px 28px 27px;border:1px solid var(--line-dark);border-radius:var(--radius-sm);background:rgba(255,255,255,.52);display:grid;grid-template-columns:auto 1fr;gap:18px;align-items:start;transition:transform .3s ease,box-shadow .3s ease,border-color .3s ease}
+.problem-card:hover{transform:translateY(-4px);box-shadow:0 20px 50px rgba(71,48,31,.08);border-color:rgba(194,156,84,.45)}
+.problem-num{font-family:'Cormorant Garamond',serif;font-size:2rem;color:var(--gold);line-height:1}
+.problem-card h3{font-size:1.55rem;line-height:1.1;margin-bottom:8px}.problem-card p{color:var(--muted);font-size:.95rem}
 
-  .dark{ background:radial-gradient(120% 140% at 50% 0%, var(--wine-800) 0%, var(--wine-950) 72%); color:var(--cream-100); }
-  .light{ background:var(--cream-50); color:var(--ink-900); }
-  .offer-bg{ background:radial-gradient(140% 120% at 50% 100%, var(--wine-800) 0%, var(--wine-950) 78%); color:var(--cream-100); }
+.switcher{margin-top:50px;border-radius:var(--radius);background:#fff;border:1px solid var(--line-dark);box-shadow:0 24px 60px rgba(71,48,31,.08);overflow:hidden}
+.switcher-tabs{display:grid;grid-template-columns:1fr 1fr;background:#ece3d5;padding:7px;gap:7px}
+.switcher-tab{border:0;background:transparent;padding:14px;border-radius:12px;font-weight:800;color:#68584a;cursor:pointer;transition:.25s}
+.switcher-tab.active{background:var(--bg);color:var(--paper);box-shadow:0 8px 20px rgba(0,0,0,.13)}
+.switcher-panel{display:none;padding:34px}.switcher-panel.active{display:grid;grid-template-columns:1fr 1fr;gap:34px;align-items:center;animation:fadeUp .45s ease both}
+.switcher-copy h3{font-size:2.15rem;line-height:1.05}.switcher-copy p{margin-top:14px;color:var(--muted)}
+.visual-cloud{min-height:250px;display:flex;align-content:center;justify-content:center;gap:10px;flex-wrap:wrap;padding:24px;border-radius:18px;background:radial-gradient(circle at center,rgba(194,156,84,.12),transparent 68%)}
+.visual-cloud span{padding:9px 13px;border:1px solid var(--line);border-radius:999px;background:#fff;font-family:'Cormorant Garamond',serif;font-size:1rem;animation:bob 4s ease-in-out infinite}
+.visual-cloud span:nth-child(2n){animation-delay:-1s}.visual-cloud span:nth-child(3n){animation-delay:-2s}
+@keyframes bob{50%{transform:translateY(-5px)}}
+.map-mini{position:relative;min-height:250px;display:grid;place-items:center;border-radius:18px;background:radial-gradient(circle at center,rgba(82,23,30,.1),transparent 68%)}
+.map-mini .core{width:112px;height:112px;border-radius:50%;background:var(--bg);color:var(--gold-2);display:grid;place-items:center;text-align:center;font-family:'Cormorant Garamond',serif;font-size:1.2rem;box-shadow:0 0 0 12px rgba(194,156,84,.08),0 0 0 28px rgba(194,156,84,.04)}
+.map-mini .orbit{position:absolute;inset:30px;border:1px dashed rgba(82,23,30,.25);border-radius:50%;animation:spin 18s linear infinite}
+.map-mini .orbit::before,.map-mini .orbit::after{content:"";position:absolute;width:14px;height:14px;border-radius:50%;background:var(--gold)}
+.map-mini .orbit::before{top:11%;left:10%}.map-mini .orbit::after{right:4%;bottom:20%}
+@keyframes spin{to{transform:rotate(360deg)}}
 
-  .mini-icon{
-    width:24px; height:24px;
-    color:var(--gold-600);
-    display:block;
-    margin:0 auto 6px;
-  }
+.reveal{opacity:0;transform:translateY(28px);transition:opacity .75s ease,transform .75s cubic-bezier(.22,.7,.2,1)}
+.reveal.show{opacity:1;transform:none}
 
-  .flourish{
-    display:flex;
-    align-items:center;
-    gap:9px;
-    color:var(--gold-600);
-  }
-  .flourish.on-light{ color:var(--wine-800); }
-  .fl-line{ width:30px; height:1px; background:currentColor; opacity:.65; }
-  .fl-diamond{ width:6px; height:6px; background:currentColor; transform:rotate(45deg); opacity:.9; }
+.product-intro{display:grid;grid-template-columns:1fr 1fr;gap:70px;align-items:center}
+.product-photo{position:relative}
+.product-photo img{border-radius:30px;box-shadow:0 34px 90px rgba(0,0,0,.18)}
+.product-photo::after{content:"";position:absolute;inset:auto 8% -30px 8%;height:60px;background:radial-gradient(ellipse,rgba(0,0,0,.24),transparent 65%);filter:blur(9px);z-index:-1}
+.product-copy .lead{margin-top:22px}
+.feature-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:13px;margin-top:30px}
+.feature{padding:18px;border:1px solid var(--line-dark);border-radius:15px;background:rgba(255,255,255,.6)}
+.feature b{display:block;margin-bottom:5px}.feature span{font-size:.86rem;color:var(--muted);line-height:1.5}
+.product-copy .btn{margin-top:28px}
 
-  .compare-label{ display:flex; align-items:center; gap:8px; font-size:.78rem; color:var(--gold-300); }
-  .compare-label .mini-icon{ width:16px; height:16px; margin:0; }
+.path-section{overflow:hidden}
+.path-head{text-align:center;max-width:820px;margin:0 auto 54px}.path-head .lead{margin-top:18px}
+.path{display:grid;grid-template-columns:repeat(4,1fr);gap:18px;position:relative}
+.path::before{content:"";position:absolute;left:10%;right:10%;top:37px;height:1px;background:linear-gradient(90deg,transparent,var(--gold),var(--gold),transparent)}
+.path-card{position:relative;padding:76px 22px 24px;border:1px solid rgba(224,196,135,.18);border-radius:18px;background:rgba(255,255,255,.035);text-align:center}
+.path-dot{position:absolute;top:24px;left:50%;transform:translateX(-50%);width:28px;height:28px;border-radius:50%;border:1px solid var(--gold);background:var(--bg);box-shadow:0 0 0 7px rgba(194,156,84,.08)}
+.path-card h3{font-size:1.55rem}.path-card p{margin-top:9px;font-size:.88rem;color:rgba(246,240,229,.68)}
 
-  .quad-card .mini-icon{ color:var(--wine-800); }
+.material-head{display:flex;justify-content:space-between;gap:40px;align-items:end;margin-bottom:42px}.material-head .lead{max-width:520px}
+.gallery{display:grid;grid-template-columns:1.1fr .9fr;grid-template-rows:auto auto;gap:18px}
+.gallery-item{position:relative;border-radius:22px;overflow:hidden;background:#111;box-shadow:0 22px 55px rgba(42,28,17,.14);cursor:zoom-in;min-height:250px}
+.gallery-item:first-child{grid-row:span 2;min-height:620px}.gallery-item img{width:100%;height:100%;object-fit:cover;transition:transform .7s ease,filter .4s ease}.gallery-item:hover img{transform:scale(1.025);filter:brightness(.94)}
+.gallery-caption{position:absolute;left:16px;right:16px;bottom:16px;padding:13px 14px;border-radius:14px;background:rgba(15,12,9,.72);backdrop-filter:blur(12px);color:#fff;font-size:.8rem;border:1px solid rgba(255,255,255,.1)}
 
-  .display-lg{ font-size:clamp(1.7rem, 5.4vw, 2.5rem); }
-  .display-md{ font-size:clamp(1.4rem, 4.4vw, 1.9rem); }
+.bonus-head{text-align:center;max-width:810px;margin:0 auto 48px}.bonus-head .lead{margin-top:18px}
+.bonus-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.bonus-card{border:1px solid rgba(224,196,135,.18);border-radius:24px;background:linear-gradient(180deg,rgba(255,255,255,.05),rgba(255,255,255,.025));overflow:hidden;transition:transform .35s ease,border-color .35s ease,box-shadow .35s ease}
+.bonus-card:hover{transform:translateY(-8px);border-color:rgba(224,196,135,.48);box-shadow:0 26px 60px rgba(0,0,0,.22)}
+.bonus-media{aspect-ratio:16/9;background:#090806;overflow:hidden}.bonus-media img{width:100%;height:100%;object-fit:contain;padding:8px;transition:transform .6s ease}.bonus-card:hover .bonus-media img{transform:scale(1.025)}
+.bonus-body{padding:25px}.bonus-index{display:inline-flex;padding:6px 9px;border:1px solid rgba(224,196,135,.25);border-radius:999px;color:var(--gold-2);font-size:.7rem;font-weight:800;letter-spacing:.08em;text-transform:uppercase;margin-bottom:12px}
+.bonus-body h3{font-size:1.75rem;line-height:1.05}.bonus-body p{margin-top:11px;font-size:.9rem;color:rgba(246,240,229,.7)}
 
-  .lede{
-    font-size:1.05rem;
-    color:inherit;
-    opacity:.92;
-  }
+.bundle{display:grid;grid-template-columns:.95fr 1.05fr;gap:70px;align-items:center}
+.bundle-media{position:relative}.bundle-media img{filter:drop-shadow(0 34px 50px rgba(0,0,0,.24));animation:bundleFloat 5s ease-in-out infinite}
+@keyframes bundleFloat{50%{transform:translateY(-8px)}}
+.bundle-list{display:grid;gap:12px;margin-top:28px}
+.bundle-item{display:flex;gap:14px;align-items:flex-start;padding:15px 17px;border-radius:14px;background:rgba(82,23,30,.045);border:1px solid rgba(82,23,30,.09)}
+.bundle-check{width:28px;height:28px;flex:0 0 28px;border-radius:50%;display:grid;place-items:center;background:var(--wine);color:#fff;font-weight:800;font-size:.8rem}.bundle-item b{display:block;margin-bottom:3px}.bundle-item span{color:var(--muted);font-size:.86rem;line-height:1.45}
 
-  .fine{
-    font-size:.92rem;
-    opacity:.78;
-  }
+.use-cases{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:44px}
+.use-card{padding:25px;border:1px solid var(--line-dark);border-radius:18px;background:rgba(255,255,255,.58)}
+.use-card strong{font-family:'Cormorant Garamond',serif;font-size:1.5rem;display:block;margin-bottom:8px}.use-card p{font-size:.9rem;color:var(--muted)}
 
-  .btn{
-    appearance:none;
-    border:none;
-    cursor:pointer;
-    font-family:'Inter',sans-serif;
-    font-weight:600;
-    font-size:1rem;
-    padding:15px 30px;
-    border-radius:var(--radius);
-    background:var(--gold-600);
-    color:var(--wine-950);
-    transition:transform .15s ease, background .2s ease;
-  }
-  .btn:hover{ background:var(--gold-300); }
-  .btn:active{ transform:scale(0.98); }
+.guarantee-wrap{display:grid;grid-template-columns:auto 1fr auto;align-items:center;gap:26px;padding:34px;border-radius:26px;background:linear-gradient(135deg,#fff,#f0e3cb);border:1px solid rgba(194,156,84,.35);box-shadow:0 26px 70px rgba(84,54,29,.1)}
+.shield{width:88px;height:88px;border-radius:50%;display:grid;place-items:center;background:var(--wine);color:var(--gold-2);font-family:'Cormorant Garamond',serif;font-size:2.2rem;box-shadow:inset 0 0 0 6px rgba(224,196,135,.08)}
+.guarantee-wrap h3{font-size:2.2rem}.guarantee-wrap p{margin-top:7px;color:var(--muted)}
+.guarantee-tag{font-weight:900;color:var(--wine);font-size:.9rem;white-space:nowrap}
 
-  .btn-ghost{
-    background:transparent;
-    border:1px solid var(--line);
-    color:inherit;
-  }
-  .btn-ghost:hover{ background:rgba(180,144,63,0.12); }
+.offer-head{text-align:center;max-width:860px;margin:0 auto 44px}.offer-head .lead{margin-top:18px}.offer-anchor{display:flex;justify-content:center;gap:10px;flex-wrap:wrap;margin-top:24px}.offer-anchor span{font-size:.77rem;padding:8px 11px;border-radius:999px;border:1px solid rgba(224,196,135,.2);color:rgba(246,240,229,.75)}
+.offer-grid{display:grid;grid-template-columns:.88fr 1.12fr;gap:22px;align-items:stretch}
+.plan{position:relative;padding:30px;border-radius:24px;border:1px solid rgba(224,196,135,.2);background:rgba(255,255,255,.035);display:flex;flex-direction:column;gap:18px}
+.plan.featured{border-color:rgba(224,196,135,.62);background:linear-gradient(180deg,rgba(194,156,84,.13),rgba(255,255,255,.04));box-shadow:0 25px 70px rgba(0,0,0,.2)}
+.plan.featured::before{content:"RECOMENDADO";position:absolute;top:-13px;right:24px;padding:7px 11px;border-radius:999px;background:var(--gold-2);color:#231810;font-size:.68rem;font-weight:900;letter-spacing:.08em}
+.plan-kicker{font-size:.74rem;text-transform:uppercase;letter-spacing:.12em;color:var(--gold-2);font-weight:800}.plan h3{font-size:2rem}.plan-desc{font-size:.88rem;color:rgba(246,240,229,.66)}
+.price{display:flex;align-items:flex-end;gap:8px}.price strong{font-family:'Cormorant Garamond',serif;font-size:3.6rem;line-height:.9}.price small{font-size:.76rem;color:rgba(246,240,229,.6);padding-bottom:5px}.price-note{font-size:.75rem;color:rgba(246,240,229,.58)}
+.plan-list{list-style:none;padding:0;margin:0;display:grid;gap:10px}.plan-list li{position:relative;padding-left:25px;font-size:.9rem;line-height:1.45;color:rgba(246,240,229,.88)}.plan-list li::before{content:"✓";position:absolute;left:0;color:var(--gold-2);font-weight:900}.plan-list li.excluded{opacity:.34;text-decoration:line-through}.plan-list li.excluded::before{content:"×";color:rgba(246,240,229,.65)}
+.plan .btn{width:100%;margin-top:auto}.microcopy{text-align:center;font-size:.72rem;color:rgba(246,240,229,.52)}
+.offer-guarantee{margin-top:20px;padding:17px 20px;border-radius:16px;border:1px solid rgba(224,196,135,.26);background:rgba(194,156,84,.08);text-align:center;color:rgba(246,240,229,.82);font-size:.82rem}.offer-guarantee b{color:var(--gold-2)}
 
-  /* ---------- tela 3: linhas comparativas ---------- */
-  .compare{
-    width:100%;
-    display:flex;
-    flex-direction:column;
-    gap:14px;
-    padding:22px 18px;
-    border:1px solid var(--line);
-    border-radius:var(--radius);
-    background:rgba(244,238,224,0.04);
-  }
-  .compare-row{ display:flex; flex-direction:column; gap:10px; text-align:left; }
-  .compare-label{ font-size:.78rem; color:var(--gold-300); }
-  .compare-track{ display:flex; gap:8px; flex-wrap:wrap; }
-  .compare-chip{
-    font-family:'Fraunces',serif;
-    font-size:.86rem;
-    padding:7px 12px;
-    border:1px solid var(--line);
-    border-radius:var(--radius);
-  }
+.faq-wrap{display:grid;grid-template-columns:.78fr 1.22fr;gap:70px;align-items:start}.faq-title{position:sticky;top:120px}.faq-title .lead{margin-top:18px}.faq{display:grid;gap:10px}.faq details{border-bottom:1px solid var(--line-dark);padding:20px 0}.faq summary{cursor:pointer;list-style:none;display:flex;justify-content:space-between;gap:16px;font-weight:800}.faq summary::-webkit-details-marker{display:none}.faq summary::after{content:"+";font-size:1.3rem;color:var(--wine);transition:transform .2s ease}.faq details[open] summary::after{transform:rotate(45deg)}.faq p{padding-top:13px;color:var(--muted);font-size:.93rem;max-width:700px}
 
-  /* ---------- tela 4: quadrantes ---------- */
-  .quad-grid{
-    width:100%;
-    display:grid;
-    grid-template-columns:1fr 1fr;
-    gap:10px;
-  }
-  .quad-card{
-    border:1px solid var(--line);
-    padding:16px 10px;
-    border-radius:var(--radius);
-    display:flex;
-    flex-direction:column;
-    gap:6px;
-    background:rgba(244,238,224,0.04);
-  }
-  .quad-name{ font-family:'Fraunces',serif; font-size:1rem; }
-  .quad-tag{ font-size:.78rem; opacity:.75; line-height:1.4; }
+.final-cta{text-align:center;max-width:860px;margin:0 auto}.final-cta .lead{margin:20px auto 0;max-width:680px}.final-cta .btn{margin-top:28px}
+footer{background:#0e0b09;color:rgba(255,255,255,.55);padding:34px 0}.footer-row{display:flex;justify-content:space-between;gap:30px;align-items:center;font-size:.76rem}.footer-brand{display:flex;align-items:center;gap:10px;color:rgba(255,255,255,.8)}.footer-brand img{width:36px;height:36px;object-fit:contain;background:#fff;border-radius:9px}
 
-  /* ---------- tela 5: preview do guia ---------- */
-  .preview-strip{
-    display:flex;
-    gap:10px;
-    width:100%;
-    justify-content:center;
-  }
-  .preview-page{
-    flex:1;
-    max-width:150px;
-    aspect-ratio:3/4;
-    border:1px solid var(--line);
-    border-radius:var(--radius);
-    background:linear-gradient(160deg, rgba(180,144,63,.14), rgba(180,144,63,.02));
-    display:flex;
-    align-items:center;
-    justify-content:center;
-    padding:10px;
-    font-family:'Fraunces',serif;
-    font-size:.78rem;
-    color:var(--gold-300);
-  }
+.sticky-cta{position:fixed;left:50%;bottom:14px;transform:translate(-50%,120px);z-index:900;width:min(620px,calc(100% - 24px));display:flex;align-items:center;justify-content:space-between;gap:14px;padding:10px 10px 10px 18px;border-radius:999px;background:rgba(23,18,14,.92);backdrop-filter:blur(14px);border:1px solid rgba(224,196,135,.28);box-shadow:0 18px 50px rgba(0,0,0,.3);transition:transform .4s ease}.sticky-cta.show{transform:translate(-50%,0)}.sticky-copy{display:grid;color:#fff;font-size:.78rem}.sticky-copy b{color:var(--gold-2);font-size:.84rem}.sticky-cta .btn{min-height:44px;padding:10px 17px;font-size:.78rem;white-space:nowrap}
 
-  /* ---------- oferta: cards ---------- */
-  .pack-grid{
-    width:100%;
-    display:flex;
-    flex-direction:column;
-    gap:16px;
-  }
-  .pack{
-    border:1px solid var(--line);
-    border-radius:var(--radius);
-    padding:24px 22px;
-    text-align:left;
-    background:rgba(244,238,224,0.03);
-    display:flex;
-    flex-direction:column;
-    gap:12px;
-  }
-  .pack.featured{
-    border-color:var(--gold-600);
-    background:rgba(180,144,63,0.09);
-  }
-  .pack-tag{
-    font-size:.78rem;
-    color:var(--gold-300);
-  }
-  .pack-name{ font-family:'Fraunces',serif; font-size:1.2rem; }
-  .pack-price{ font-family:'Fraunces',serif; font-size:1.9rem; }
-  .pack-was{ font-size:.85rem; opacity:.6; text-decoration:line-through; }
-  .pack-list{
-    list-style:none;
-    padding:0; margin:0;
-    display:flex; flex-direction:column; gap:6px;
-    font-size:.92rem;
-    opacity:.9;
-  }
-  .pack-list li::before{ content:"— "; opacity:.6; }
+.lightbox{position:fixed;inset:0;z-index:3000;background:rgba(10,8,6,.9);display:none;align-items:center;justify-content:center;padding:30px}.lightbox.open{display:flex}.lightbox img{max-width:min(1100px,92vw);max-height:88vh;border-radius:18px;box-shadow:0 30px 100px rgba(0,0,0,.55)}.lightbox-close{position:absolute;top:20px;right:22px;width:44px;height:44px;border-radius:50%;border:1px solid rgba(255,255,255,.2);background:rgba(255,255,255,.08);color:#fff;font-size:1.4rem;cursor:pointer}
 
-  .guarantee{
-    display:flex; align-items:center; gap:10px;
-    font-size:.88rem; opacity:.85;
-    border-top:1px solid var(--line);
-    padding-top:16px;
-    margin-top:4px;
-  }
+.modal-overlay{position:fixed;inset:0;z-index:4000;background:rgba(10,8,7,.8);display:none;align-items:center;justify-content:center;padding:20px}.modal-overlay.open{display:flex}.modal{width:min(500px,100%);background:var(--paper-2);border-radius:24px;padding:30px;box-shadow:0 30px 100px rgba(0,0,0,.4);text-align:center;border-top:4px solid var(--gold)}.modal h3{font-size:2rem;line-height:1}.modal p{margin-top:14px;color:var(--muted)}.modal-actions{display:grid;gap:10px;margin-top:22px}.modal .btn-outline{color:var(--ink);border-color:rgba(36,27,21,.2)}
 
-  /* ---------- FAQ ---------- */
-  .faq{ width:100%; display:flex; flex-direction:column; gap:8px; text-align:left; }
-  .faq details{
-    border:1px solid var(--line);
-    border-radius:var(--radius);
-    padding:14px 16px;
-  }
-  .faq summary{
-    cursor:pointer;
-    font-family:'Fraunces',serif;
-    font-size:1rem;
-    list-style:none;
-  }
-  .faq summary::-webkit-details-marker{ display:none; }
-  .faq p{ margin-top:10px; font-size:.92rem; opacity:.85; }
-
-  footer{
-    padding:26px;
-    text-align:center;
-    font-size:.78rem;
-    opacity:.6;
-  }
-
-  /* ---------- modal de upsell ---------- */
-  .modal-overlay{
-    position:fixed; inset:0;
-    background:rgba(20,8,10,0.78);
-    display:none;
-    align-items:center;
-    justify-content:center;
-    z-index:100;
-    padding:20px;
-  }
-  .modal-overlay.open{ display:flex; }
-  .modal{
-    background:var(--cream-50);
-    color:var(--ink-900);
-    border-radius:var(--radius);
-    max-width:420px;
-    width:100%;
-    padding:30px 26px;
-    text-align:center;
-    display:flex;
-    flex-direction:column;
-    gap:16px;
-    border-top:3px solid var(--gold-600);
-  }
-  .modal h3{ font-size:1.3rem; }
-  .modal .btn-ghost{ border-color:rgba(74,58,50,0.3); color:var(--ink-900); font-size:.9rem; padding:10px 18px; }
-
-
-  .screen-label{font-size:.72rem;font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:var(--gold-300);opacity:.9;}
-  .screen-label.on-light{color:var(--wine-800);}
-  .insight{width:100%;border-left:2px solid var(--gold-600);padding:12px 16px;text-align:left;background:rgba(180,144,63,.07);font-size:.92rem;line-height:1.55;}
-  .proof-grid{width:100%;display:grid;grid-template-columns:1fr;gap:10px;text-align:left;}
-  .proof-card{border:1px solid var(--line);padding:15px 16px;border-radius:var(--radius);background:rgba(244,238,224,.04);}
-  .proof-card strong{display:block;font-family:'Fraunces',serif;font-size:1rem;margin-bottom:5px;}
-  .proof-card span{font-size:.84rem;line-height:1.45;opacity:.82;}
-  .trust-line{display:flex;flex-wrap:wrap;justify-content:center;gap:8px 16px;font-size:.76rem;opacity:.72;}
-  .btn{min-width:220px;}
-  @media (max-width:639px){.slide{padding-left:20px;padding-right:20px;}.btn{width:100%;}}
-
-
-  /* ---------- motion / visual experience v2 ---------- */
-  .track{scroll-behavior:smooth;}
-  .slide::before{content:"";position:absolute;inset:0;pointer-events:none;background:radial-gradient(circle at 50% 20%,rgba(217,192,138,.08),transparent 42%);opacity:.7;}
-  .slide-inner{position:relative;z-index:1;}
-  .slide .slide-inner > *{opacity:0;transform:translateY(24px);transition:opacity .7s ease,transform .8s cubic-bezier(.2,.7,.2,1);}
-  .slide.is-visible .slide-inner > *{opacity:1;transform:none;}
-  .slide.is-visible .slide-inner > *:nth-child(2){transition-delay:.08s}.slide.is-visible .slide-inner > *:nth-child(3){transition-delay:.16s}.slide.is-visible .slide-inner > *:nth-child(4){transition-delay:.24s}.slide.is-visible .slide-inner > *:nth-child(5){transition-delay:.32s}.slide.is-visible .slide-inner > *:nth-child(6){transition-delay:.40s}.slide.is-visible .slide-inner > *:nth-child(7){transition-delay:.48s}
-  .eyebrow-mark{width:54px;height:2px;background:var(--gold-600);position:relative;overflow:visible;box-shadow:0 0 18px rgba(217,192,138,.25)}
-  .eyebrow-mark::after{content:"";position:absolute;left:50%;top:50%;width:7px;height:7px;background:var(--gold-300);transform:translate(-50%,-50%) rotate(45deg);}
-  .btn{position:relative;overflow:hidden;box-shadow:0 8px 24px rgba(0,0,0,.12);transition:transform .25s ease,background .25s ease,box-shadow .25s ease;}
-  .btn::after{content:"";position:absolute;top:-60%;left:-35%;width:25%;height:220%;background:rgba(255,255,255,.24);transform:rotate(18deg) translateX(-220px);transition:transform .6s ease;}
-  .btn:hover{transform:translateY(-2px);box-shadow:0 12px 30px rgba(0,0,0,.18)} .btn:hover::after{transform:rotate(18deg) translateX(520px)}
-  .floating-orbit{position:absolute;width:330px;height:330px;border:1px solid rgba(217,192,138,.13);border-radius:50%;animation:orbitSpin 18s linear infinite;pointer-events:none;}
-  .floating-orbit::before,.floating-orbit::after{content:"";position:absolute;width:7px;height:7px;background:var(--gold-300);border-radius:50%;box-shadow:0 0 16px rgba(217,192,138,.65)} .floating-orbit::before{top:12%;left:50%}.floating-orbit::after{bottom:16%;right:13%}
-  @keyframes orbitSpin{to{transform:rotate(360deg)}}
-  .book-cloud{width:100%;display:flex;flex-wrap:wrap;justify-content:center;gap:7px;max-width:510px;position:relative}
-  .book-pill{padding:7px 10px;border:1px solid var(--line);border-radius:999px;font-family:'Fraunces',serif;font-size:.78rem;background:rgba(244,238,224,.04);animation:floatBook 4s ease-in-out infinite;}
-  .book-pill:nth-child(2n){animation-delay:-1.2s}.book-pill:nth-child(3n){animation-delay:-2.2s}.book-pill:nth-child(4n){animation-delay:-.5s}
-  @keyframes floatBook{0%,100%{transform:translateY(0)}50%{transform:translateY(-5px)}}
-  .map-visual{width:100%;padding:18px 10px 10px;border:1px solid var(--line);border-radius:8px;background:rgba(244,238,224,.035);overflow:hidden}
-  .map-line{height:1px;background:linear-gradient(90deg,transparent,var(--gold-600),transparent);transform:scaleX(0);transform-origin:center;transition:transform 1s ease .4s}.is-visible .map-line{transform:scaleX(1)}
-  .map-nodes{display:flex;align-items:center;justify-content:center;gap:8px;flex-wrap:wrap}.map-node{padding:8px 11px;border:1px solid var(--line);font-family:'Fraunces',serif;font-size:.8rem;border-radius:3px}.map-node.main{border-color:var(--gold-600);box-shadow:0 0 24px rgba(180,144,63,.12)}
-  .compare-chip{transition:transform .3s ease,background .3s ease,border-color .3s ease}.compare-chip:hover{transform:translateY(-3px);border-color:var(--gold-300);background:rgba(180,144,63,.1)}
-  .quad-card{transition:transform .3s ease,box-shadow .3s ease,background .3s ease}.quad-card:hover{transform:translateY(-6px);box-shadow:0 16px 35px rgba(46,15,19,.10);background:rgba(180,144,63,.08)}
-  .product-hero{position:relative;display:flex;justify-content:center;align-items:center;width:100%;min-height:310px}.product-hero img{position:relative;z-index:2;filter:drop-shadow(0 22px 28px rgba(0,0,0,.28));animation:bookFloat 5s ease-in-out infinite}.product-glow{position:absolute;width:230px;height:230px;border-radius:50%;background:radial-gradient(circle,rgba(217,192,138,.23),transparent 65%);animation:pulseGlow 3.5s ease-in-out infinite}
-  @keyframes bookFloat{0%,100%{transform:translateY(0) rotate(-1deg)}50%{transform:translateY(-10px) rotate(1deg)}} @keyframes pulseGlow{0%,100%{transform:scale(.92);opacity:.65}50%{transform:scale(1.08);opacity:1}}
-  .proof-grid{grid-template-columns:repeat(3,1fr)}.proof-card{transition:transform .3s ease,border-color .3s ease}.proof-card:hover{transform:translateY(-5px);border-color:var(--gold-300)}
-  .offer-intro{text-align:center;width:100%;max-width:500px}.value-stack{display:flex;flex-direction:column;gap:4px;align-items:center}.value-step{font-family:'Fraunces',serif;font-size:1rem}.value-arrow{color:var(--gold-300);font-size:.85rem}
-  .packs-heading{width:100%;text-align:left;font-family:'Fraunces',serif;font-size:1.35rem;margin-top:4px}.pack{position:relative;overflow:hidden;transition:transform .3s ease,box-shadow .3s ease}.pack:hover{transform:translateY(-4px)}.pack.featured{box-shadow:0 18px 45px rgba(0,0,0,.18);animation:featuredPulse 4s ease-in-out infinite}.pack.featured::before{content:"";position:absolute;inset:0;border-radius:inherit;border:1px solid rgba(217,192,138,.3);pointer-events:none;animation:borderPulse 3s ease-in-out infinite}
-  @keyframes featuredPulse{0%,100%{box-shadow:0 18px 45px rgba(0,0,0,.18)}50%{box-shadow:0 22px 55px rgba(180,144,63,.24)}} @keyframes borderPulse{0%,100%{opacity:.3}50%{opacity:.9}}
-  .pack-list li{position:relative;padding-left:23px}.pack-list li::before{content:"✓";position:absolute;left:0;color:var(--gold-300);opacity:1;font-weight:700}.pack-list li.excluded{opacity:.38;text-decoration:line-through}.pack-list li.excluded::before{content:"×";color:currentColor}.pack-benefit{font-size:.78rem;line-height:1.45;opacity:.7;padding-top:2px}.plan-divider{height:1px;background:var(--line);width:100%;margin:2px 0}.bonus-row{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;width:100%}.bonus-mini{border:1px solid var(--line);padding:9px;border-radius:5px;text-align:left;background:rgba(180,144,63,.06)}.bonus-mini strong{display:block;font-family:'Fraunces',serif;font-size:.82rem}.bonus-mini span{font-size:.7rem;opacity:.72}.guarantee{position:relative;width:100%;justify-content:center;text-align:center;border:1px solid rgba(217,192,138,.45);border-radius:8px;padding:18px 16px;background:linear-gradient(135deg,rgba(180,144,63,.12),rgba(180,144,63,.035));box-shadow:0 0 30px rgba(180,144,63,.08)}.guarantee strong{display:block;font-family:'Fraunces',serif;font-size:1.15rem;margin-bottom:4px;color:var(--gold-300)}.guarantee small{display:block;opacity:.8;font-size:.78rem}
-  .sticky-choice{position:fixed;bottom:14px;left:50%;transform:translateX(-50%) translateY(120px);z-index:60;background:rgba(46,15,19,.92);backdrop-filter:blur(10px);border:1px solid rgba(217,192,138,.35);padding:9px 10px;border-radius:999px;display:flex;gap:8px;align-items:center;transition:transform .4s ease}.sticky-choice.show{transform:translateX(-50%) translateY(0)}.sticky-choice span{font-size:.72rem;color:var(--cream-100);padding-left:7px}.sticky-choice button{border:0;background:var(--gold-600);color:var(--wine-950);font-weight:700;padding:9px 14px;border-radius:999px;cursor:pointer}
-  @media(max-width:639px){.proof-grid{grid-template-columns:1fr}.bonus-row{grid-template-columns:1fr}.floating-orbit{width:270px;height:270px}.product-hero{min-height:275px}.sticky-choice span{display:none}.sticky-choice{width:auto}}
-  @media(prefers-reduced-motion:reduce){*,*::before,*::after{animation-duration:.01ms!important;animation-iteration-count:1!important;scroll-behavior:auto!important;transition-duration:.01ms!important}}
-
-  @media (min-width:640px){
-    .quad-grid{ grid-template-columns:repeat(4,1fr); }
-  }
+@keyframes fadeUp{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:none}}
+@media(max-width:980px){
+  .nav-links{display:none}
+  .hero{min-height:auto;padding:72px 0}.hero-grid,.problem-grid,.product-intro,.bundle,.faq-wrap{grid-template-columns:1fr;gap:46px}.hero-copy{text-align:center;margin-inline:auto}.hero-copy .kicker{justify-content:center}.hero-actions,.hero-trust{justify-content:center}.hero-visual{min-height:560px}.sticky-title,.faq-title{position:static}.signal-grid{grid-template-columns:repeat(2,1fr)}.signal:nth-child(2){border-right:0}.signal:nth-child(-n+2){border-bottom:1px solid var(--line-dark)}.path{grid-template-columns:repeat(2,1fr)}.path::before{display:none}.bonus-grid,.use-cases{grid-template-columns:1fr 1fr}.offer-grid{grid-template-columns:1fr}.gallery{grid-template-columns:1fr}.gallery-item:first-child{grid-row:auto;min-height:520px}.material-head{align-items:start;flex-direction:column}.guarantee-wrap{grid-template-columns:auto 1fr}.guarantee-tag{grid-column:2}.bundle-media{max-width:720px;margin-inline:auto}
+}
+@media(max-width:680px){
+  .container{width:min(var(--max),calc(100% - 28px))}.section{padding:78px 0}.nav{height:64px}.brand span{display:none}.hero{padding:58px 0 68px}.hero-grid{gap:34px}.hero-copy{text-align:left}.hero-copy .kicker{justify-content:flex-start}.hero-copy h1{font-size:clamp(3.25rem,15vw,4.7rem)}.hero-actions,.hero-trust{justify-content:flex-start}.hero-actions .btn{width:100%}.hero-visual{min-height:430px}.hero-img{width:94%}.hero-aura{width:360px;height:360px}.float-badge{font-size:.69rem;padding:10px 12px}.badge-a{left:-2px;top:16%}.badge-b{right:-4px;bottom:13%}.signal-grid{grid-template-columns:1fr 1fr}.signal{padding:18px 8px}.signal strong{font-size:1.3rem}.switcher-panel.active{grid-template-columns:1fr;padding:22px}.feature-grid,.bonus-grid,.use-cases,.path{grid-template-columns:1fr}.path-card{padding-top:58px}.path-dot{top:18px}.gallery-item:first-child{min-height:430px}.gallery-item{min-height:250px}.guarantee-wrap{grid-template-columns:1fr;text-align:center}.shield{margin-inline:auto}.guarantee-tag{grid-column:auto}.plan{padding:24px 20px}.price strong{font-size:3.2rem}.sticky-copy{display:none}.sticky-cta{width:auto;right:12px;left:auto;transform:translateY(120px);padding:8px}.sticky-cta.show{transform:translateY(0)}.sticky-cta .btn{min-width:0}.footer-row{flex-direction:column;text-align:center}.modal{padding:26px 20px}.material-head{margin-bottom:28px}
+}
+@media(prefers-reduced-motion:reduce){*{scroll-behavior:auto!important;animation:none!important;transition:none!important}.reveal{opacity:1;transform:none}}
 </style>
 </head>
 <body>
+<div class="scroll-progress" aria-hidden="true"><span id="scrollProgress"></span></div>
+<div class="top-note">Material digital • acesso pela área de membros • 7 dias de garantia</div>
 
-<svg style="display:none" aria-hidden="true">
-  <defs>
-    <symbol id="icon-scroll" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4">
-      <rect x="6" y="4" width="12" height="16" rx="1"/>
-      <circle cx="6" cy="4" r="2"/>
-      <circle cx="6" cy="20" r="2"/>
-      <line x1="9" y1="9" x2="15" y2="9"/>
-      <line x1="9" y1="13" x2="15" y2="13"/>
-    </symbol>
-    <symbol id="icon-path" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4">
-      <path d="M4 20 L9 8 L14 16 L20 4"/>
-      <circle cx="4" cy="20" r="1.6" fill="currentColor" stroke="none"/>
-      <circle cx="20" cy="4" r="1.6" fill="currentColor" stroke="none"/>
-    </symbol>
-    <symbol id="icon-globe" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4">
-      <circle cx="12" cy="12" r="8"/>
-      <ellipse cx="12" cy="12" rx="3.2" ry="8"/>
-      <line x1="4" y1="12" x2="20" y2="12"/>
-    </symbol>
-    <symbol id="icon-eye" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4">
-      <path d="M2 12 C6 6, 18 6, 22 12 C18 18, 6 18, 2 12 Z"/>
-      <circle cx="12" cy="12" r="2.6"/>
-    </symbol>
-    <symbol id="icon-book" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4">
-      <path d="M12 5 C10 4 6 4 4 5 V19 C6 18 10 18 12 19 C14 18 18 18 20 19 V5 C18 4 14 4 12 5 Z"/>
-      <line x1="12" y1="5" x2="12" y2="19"/>
-    </symbol>
-    <symbol id="icon-clock" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4">
-      <circle cx="12" cy="12" r="8.5"/>
-      <line x1="12" y1="12" x2="12" y2="7"/>
-      <line x1="12" y1="12" x2="15.5" y2="14"/>
-    </symbol>
-  </defs>
-</svg>
+<header class="nav-wrap">
+  <div class="container nav">
+    <a class="brand" href="#inicio" aria-label="A Bíblia de Cima">
+      <img src="img/logo-abba-palavra.png" alt="ABBA PALAVRA">
+      <span>ABBA PALAVRA</span>
+    </a>
+    <nav class="nav-links" aria-label="Navegação principal">
+      <a href="#problema">Por que funciona</a>
+      <a href="#material">O material</a>
+      <a href="#bonus">Bônus</a>
+      <a href="#oferta">Oferta</a>
+      <a href="#faq">Dúvidas</a>
+    </nav>
+    <a class="btn btn-small" href="#oferta">Ver o pacote completo</a>
+  </div>
+</header>
 
-<div class="progress-shell"><div class="progress-fill" id="progressFill"></div></div>
+<main>
+  <section class="hero" id="inicio">
+    <div class="container hero-grid">
+      <div class="hero-copy reveal">
+        <span class="kicker">Um mapa visual para quem quer entender a Bíblia como um todo</span>
+        <h1>Pare de enxergar <em>66 livros soltos.</em> Comece a enxergar a história inteira.</h1>
+        <p class="lead">A Bíblia de Cima organiza a estrutura das Escrituras de forma visual para ajudar você a perceber como livros, temas, gêneros e testamentos se conectam — sem transformar seu estudo em um curso complicado de teologia.</p>
+        <div class="hero-actions">
+          <a class="btn" href="#oferta">Quero enxergar a Bíblia como um todo <span aria-hidden="true">→</span></a>
+          <a class="btn btn-outline" href="#material">Ver o material por dentro</a>
+        </div>
+        <div class="hero-trust">
+          <span>Acesso digital</span><span>PDF para consultar</span><span>7 dias de garantia</span>
+        </div>
+      </div>
 
-<div class="track" id="track">
-
-  <!-- TELA 1 — Identificação -->
-  <section class="slide dark" id="s1">
-    <div class="slide-inner">
-      <span class="screen-label">Vamos começar pelo que você já vive</span>
-      <h1 class="display display-lg">Você já teve a sensação de conhecer várias histórias da Bíblia, mas não conseguir enxergar como tudo se conecta?</h1>
-      <p class="fine">Você conhece partes da Bíblia. A questão é conseguir enxergar o todo.</p>
-      <button class="btn next-btn" data-next="s2">Sim, isso acontece comigo</button>
+      <div class="hero-visual reveal" id="heroVisual">
+        <div class="hero-aura" aria-hidden="true"></div>
+        <img class="hero-img" id="heroImage" src="img/capa-principal.jpg" alt="A Bíblia de Cima — visão panorâmica conectada">
+        <div class="float-badge badge-a"><b>66 livros</b> → uma visão organizada</div>
+        <div class="float-badge badge-b"><b>Gênesis</b> → Apocalipse</div>
+      </div>
     </div>
   </section>
 
-  <!-- TELA 2 — Curiosidade -->
-  <section class="slide light" id="s2">
-    <div class="slide-inner">
-      <span class="screen-label on-light">Antes de continuar</span>
-      <h2 class="display display-lg">Você conhece a Bíblia. Mas será que consegue enxergá-la?</h2>
-      <p class="lede">Nos próximos passos, você vai perceber como algumas conexões mudam a forma de enxergar a Bíblia.</p>
-      <div class="insight">Não é uma prova de quanto você sabe. É uma experiência para mostrar a diferença entre <strong>conhecer partes</strong> e <strong>enxergar a estrutura</strong>.</div>
-      <button class="btn next-btn" data-next="s3">Quero continuar</button>
+  <section class="signal-strip" aria-label="Resumo do produto">
+    <div class="container signal-grid">
+      <div class="signal"><strong>66 livros</strong><span>vistos dentro do todo</span></div>
+      <div class="signal"><strong>3 complementos</strong><span>no pacote completo</span></div>
+      <div class="signal"><strong>Visual e consultável</strong><span>para estudar no seu ritmo</span></div>
+      <div class="signal"><strong>7 dias</strong><span>para conhecer com tranquilidade</span></div>
     </div>
   </section>
 
-  <!-- TELA 3 — Microdescoberta 1 -->
-  <section class="slide dark" id="s3">
-    <div class="slide-inner">
-      <span class="screen-label">Pequena descoberta #1</span>
-      <h2 class="display display-md">A ordem em que você encontra os livros na Bíblia não conta toda a história.</h2>
-      <p class="lede">As cartas de Paulo, por exemplo, aparecem no cânon em uma determinada sequência. A ordem em que foram escritas é discutida pelos estudiosos e não precisa coincidir com essa sequência.</p>
+  <section class="section section-paper" id="problema">
+    <div class="container problem-grid">
+      <div class="sticky-title reveal">
+        <span class="kicker">O problema não é falta de conteúdo</span>
+        <h2>Você pode conhecer muitas partes da Bíblia e ainda assim não conseguir <span class="wine">enxergar o desenho completo.</span></h2>
+        <p class="lead">Quando cada livro é estudado isoladamente, o conhecimento cresce — mas a visão do todo nem sempre acompanha.</p>
+      </div>
 
-      <div class="compare">
-        <div class="compare-row">
-          <span class="compare-label">ordem no cânon</span>
-          <div class="compare-track">
-            <span class="compare-chip">Romanos</span>
-            <span class="compare-chip">1 Coríntios</span>
-            <span class="compare-chip">Gálatas</span>
-            <span class="compare-chip">Efésios</span>
+      <div class="problem-list">
+        <article class="problem-card reveal">
+          <div class="problem-num">01</div>
+          <div><h3>As histórias parecem peças separadas</h3><p>Você lembra de personagens, acontecimentos e passagens, mas nem sempre percebe onde cada peça se encaixa na narrativa maior.</p></div>
+        </article>
+        <article class="problem-card reveal">
+          <div class="problem-num">02</div>
+          <div><h3>Antigo e Novo Testamento parecem mundos diferentes</h3><p>Sem uma visão panorâmica, conexões de temas, promessas e desenvolvimento bíblico podem passar despercebidas.</p></div>
+        </article>
+        <article class="problem-card reveal">
+          <div class="problem-num">03</div>
+          <div><h3>Você sabe o que lê, mas perde o contexto</h3><p>A ordem dos livros, os gêneros literários e o lugar de cada texto na história bíblica fazem diferença na compreensão.</p></div>
+        </article>
+
+        <div class="switcher reveal" aria-label="Comparação visual">
+          <div class="switcher-tabs">
+            <button class="switcher-tab active" data-panel="semMapa">Sem uma visão do todo</button>
+            <button class="switcher-tab" data-panel="comMapa">Com uma visão do todo</button>
+          </div>
+          <div class="switcher-panel active" id="semMapa">
+            <div class="visual-cloud" aria-hidden="true">
+              <span>Gênesis</span><span>Salmos</span><span>Isaías</span><span>Mateus</span><span>João</span><span>Romanos</span><span>Êxodo</span><span>Atos</span><span>Apocalipse</span>
+            </div>
+            <div class="switcher-copy"><h3>Muitas peças. Poucas linhas entre elas.</h3><p>Você até reconhece cada livro, mas precisa reconstruir mentalmente as relações toda vez que estuda.</p></div>
+          </div>
+          <div class="switcher-panel" id="comMapa">
+            <div class="map-mini" aria-hidden="true"><div class="orbit"></div><div class="core">66 livros<br>1 visão</div></div>
+            <div class="switcher-copy"><h3>O mesmo conteúdo, agora organizado.</h3><p>O objetivo de A Bíblia de Cima é oferecer uma estrutura visual para localizar, relacionar e revisar o que você já lê nas Escrituras.</p></div>
           </div>
         </div>
-        <div class="compare-row">
-          <span class="compare-label">uma possível reconstrução cronológica</span>
-          <div class="compare-track">
-            <span class="compare-chip">Gálatas</span>
-            <span class="compare-chip">1 Coríntios</span>
-            <span class="compare-chip">Romanos</span>
-            <span class="compare-chip">Efésios</span>
-          </div>
-        </div>
       </div>
-      <div class="map-visual"><div class="map-nodes"><span class="map-node">Contexto</span><span class="map-node main">Conexão</span><span class="map-node">História</span></div><div class="map-line"></div><p class="fine" style="margin-top:10px">Quando você enxerga a relação entre os livros, a leitura ganha contexto.</p></div>
-
-      <button class="btn next-btn" data-next="s4">Quero ver outra conexão</button>
     </div>
   </section>
 
-  <!-- TELA 4 — Microdescoberta 2 + amplificação -->
-  <section class="slide light" id="s4">
-    <div class="slide-inner">
-      <h2 class="display display-md">E os 4 Evangelhos? A mesma história aparece com ênfases diferentes.</h2>
-
-      <div class="quad-grid">
-        <div class="quad-card">
-          <span class="quad-name">Mateus</span>
-          <span class="quad-tag">Apresenta Jesus em forte diálogo com as promessas e expectativas judaicas.</span>
-        </div>
-        <div class="quad-card">
-          <span class="quad-name">Marcos</span>
-          <span class="quad-tag">Tem narrativa dinâmica e forte ênfase nas ações e acontecimentos.</span>
-        </div>
-        <div class="quad-card">
-          <span class="quad-name">Lucas</span>
-          <span class="quad-tag">Apresenta uma narrativa detalhada e destaca o alcance universal da missão de Jesus.</span>
-        </div>
-        <div class="quad-card">
-          <span class="quad-name">João</span>
-          <span class="quad-tag">Traz uma ênfase marcante na identidade e divindade de Jesus.</span>
-        </div>
+  <section class="section section-cream">
+    <div class="container product-intro">
+      <div class="product-photo reveal">
+        <img src="img/capa-principal.jpg" alt="Apresentação visual do guia A Bíblia de Cima">
       </div>
-
-      <p class="lede" style="text-align:left;">Percebeu o que aconteceu? Você pode conhecer os livros, os personagens e as histórias — cada um separadamente — mas, sem enxergar as conexões, eles continuam parecendo peças soltas.</p>
-
-      <div class="insight">É exatamente essa lacuna que queremos resolver: <strong>menos peças soltas, mais visão do todo.</strong></div>
-      <button class="btn next-btn" data-next="s5">Quero ver o mapa completo</button>
+      <div class="product-copy reveal">
+        <span class="kicker">O mecanismo</span>
+        <h2>Não é mais informação. É uma forma mais clara de <span class="wine">organizar o que você vê.</span></h2>
+        <p class="lead">A Bíblia de Cima foi pensada como uma ferramenta visual de consulta: você abre, localiza, compara e volta ao seu estudo com um mapa mental mais organizado.</p>
+        <div class="feature-grid">
+          <div class="feature"><b>Estrutura dos 66 livros</b><span>Para localizar cada parte dentro do conjunto.</span></div>
+          <div class="feature"><b>Conexões entre os testamentos</b><span>Para perceber relações que ficam escondidas numa leitura fragmentada.</span></div>
+          <div class="feature"><b>Gêneros literários</b><span>Para reconhecer que narrativa, poesia, profecia e cartas pedem leituras diferentes.</span></div>
+          <div class="feature"><b>Consulta rápida</b><span>Para revisar antes ou durante seus estudos, sem começar do zero.</span></div>
+        </div>
+        <a class="btn btn-dark" href="#material">Quero ver os materiais <span aria-hidden="true">↓</span></a>
+      </div>
     </div>
   </section>
 
-  <!-- TELA 5 — Mecanismo / produto -->
-  <section class="slide dark" id="s5">
-    <div class="slide-inner">
-      <span class="screen-label">O mecanismo</span>
-      <h2 class="display display-md">Foi por isso que criamos A Bíblia de Cima.</h2>
-      <p class="lede">Um guia visual para enxergar como os 66 livros se conectam, do Gênesis ao Apocalipse.</p>
-
-      <div class="product-hero"><div class="product-glow" aria-hidden="true"></div><img src="img/capa-principal.jpg" alt="Capa do guia A Bíblia de Cima" style="max-width:260px; width:100%; border-radius:var(--radius);"></div>
-      <div class="proof-grid">
-        <div class="proof-card"><strong>Estrutura dos 66 livros</strong><span>Uma visão organizada para localizar cada parte dentro do todo.</span></div>
-        <div class="proof-card"><strong>Conexões entre os testamentos</strong><span>Para perceber relações que ficam difíceis de enxergar quando você lê os livros isoladamente.</span></div>
-        <div class="proof-card"><strong>Feito para consultar</strong><span>Material digital para estudar no seu ritmo, pelo celular, computador ou impresso.</span></div>
+  <section class="section section-dark path-section">
+    <div class="container">
+      <div class="path-head reveal">
+        <span class="kicker">Da leitura fragmentada à visão panorâmica</span>
+        <h2>Um caminho simples para transformar peças soltas em <span class="gold">contexto.</span></h2>
+        <p class="lead">Você não precisa memorizar tudo. Precisa de uma estrutura à qual possa voltar sempre que quiser se localizar.</p>
       </div>
-      <div class="insight">Não é um curso de teologia. É uma ferramenta visual para ajudar você a <strong>enxergar a Bíblia como um todo</strong>.</div>
-
-      <button class="btn next-btn" data-next="s5b">Quero conhecer o ABBA PALAVRA</button>
+      <div class="path">
+        <article class="path-card reveal"><span class="path-dot"></span><h3>Localize</h3><p>Entenda onde um livro está dentro do conjunto bíblico.</p></article>
+        <article class="path-card reveal"><span class="path-dot"></span><h3>Relacione</h3><p>Observe conexões com outros livros, temas e testamentos.</p></article>
+        <article class="path-card reveal"><span class="path-dot"></span><h3>Interprete</h3><p>Considere o gênero literário e o contexto antes de aprofundar.</p></article>
+        <article class="path-card reveal"><span class="path-dot"></span><h3>Revise</h3><p>Use os materiais como referência para retomar rapidamente o panorama.</p></article>
+      </div>
     </div>
   </section>
 
-  <!-- TELA 5B — Autoridade / quem está por trás -->
-  <section class="slide light" id="s5b">
-    <div class="slide-inner">
-      <img src="img/logo-abba-palavra.png" alt="Logo ABBA PALAVRA" style="max-width:90px; width:100%;">
-      <span class="screen-label on-light">Quem está por trás</span>
-      <h2 class="display display-md">Conhecimento bíblico pode ser profundo sem precisar ser complicado.</h2>
-      <p class="lede" style="text-align:left;">O ABBA PALAVRA nasceu com a missão de tornar o conhecimento por trás das Escrituras mais acessível para quem ama a Bíblia e quer estudá-la com mais clareza.</p>
-      <p class="lede" style="text-align:left;">A Bíblia é profunda. A forma de enxergá-la pode ser simples.</p>
-      <button class="btn next-btn" data-next="s6">Quero ver o material completo</button>
+  <section class="section section-paper" id="material">
+    <div class="container">
+      <div class="material-head reveal">
+        <div><span class="kicker">Veja antes de comprar</span><h2>Um material feito para ser <span class="wine">visual, consultável e claro.</span></h2></div>
+        <p class="lead">As imagens abaixo mostram a proposta visual dos materiais. Clique em qualquer uma para ampliar.</p>
+      </div>
+      <div class="gallery">
+        <figure class="gallery-item reveal" data-lightbox="img/capa-principal.jpg"><img src="img/capa-principal.jpg" alt="Visual principal de A Bíblia de Cima"><figcaption class="gallery-caption">Visão panorâmica conectada — o conceito central do produto.</figcaption></figure>
+        <figure class="gallery-item reveal" data-lightbox="img/bonus-ficha.png"><img src="img/bonus-ficha.png" alt="Ficha de Consulta Rápida dos 66 Livros"><figcaption class="gallery-caption">Ficha de consulta rápida — referência livro por livro.</figcaption></figure>
+        <figure class="gallery-item reveal" data-lightbox="img/bonus-mapa.png"><img src="img/bonus-mapa.png" alt="Mapa de Conexões Entre os Testamentos"><figcaption class="gallery-caption">Mapa de conexões — relações visuais entre os testamentos.</figcaption></figure>
+      </div>
     </div>
   </section>
 
-  <!-- TELA 6 — Oferta -->
-  <section class="slide offer-bg" id="s6">
-    <div class="slide-inner">
-      <span class="screen-label">Agora você já viu o porquê</span>
-      <h2 class="display display-md">Pare de juntar peças. Comece a enxergar o mapa.</h2>
-      <div class="offer-intro">
-        <p class="lede">A Bíblia de Cima transforma os 66 livros em uma visão mais clara, organizada e fácil de consultar.</p>
+  <section class="section section-dark" id="bonus">
+    <div class="container">
+      <div class="bonus-head reveal">
+        <span class="kicker">Pacote completo</span>
+        <h2>O guia principal + 3 materiais para aprofundar a <span class="gold">visão do todo.</span></h2>
+        <p class="lead">Cada complemento resolve uma dificuldade diferente: localizar os livros, ler cada gênero com mais contexto e enxergar as conexões entre os testamentos.</p>
       </div>
-      <div class="value-stack">
-        <span class="value-step">66 livros</span><span class="value-arrow">↓</span><span class="value-step">uma visão organizada</span><span class="value-arrow">↓</span><span class="value-step">conexões mais fáceis de enxergar</span><span class="value-arrow">↓</span><span class="value-step">mais clareza para seus estudos</span>
+      <div class="bonus-grid">
+        <article class="bonus-card reveal">
+          <div class="bonus-media"><img src="img/bonus-ficha.png" alt="Ficha de Consulta Rápida dos 66 Livros"></div>
+          <div class="bonus-body"><span class="bonus-index">Complemento 01</span><h3>Ficha de Consulta Rápida dos 66 Livros</h3><p>Uma referência prática para voltar ao essencial de cada livro sem precisar reconstruir o panorama toda vez.</p></div>
+        </article>
+        <article class="bonus-card reveal">
+          <div class="bonus-media"><img src="img/bonus-generos.png" alt="Guia de Como Ler Cada Gênero Literário"></div>
+          <div class="bonus-body"><span class="bonus-index">Complemento 02</span><h3>Guia de Como Ler Cada Gênero Literário</h3><p>Uma abordagem visual para reconhecer diferenças entre narrativa, poesia, profecia e outros gêneros bíblicos.</p></div>
+        </article>
+        <article class="bonus-card reveal">
+          <div class="bonus-media"><img src="img/bonus-mapa.png" alt="Mapa de Conexões Entre os Testamentos"></div>
+          <div class="bonus-body"><span class="bonus-index">Complemento 03</span><h3>Mapa de Conexões Entre os Testamentos</h3><p>Um apoio visual para observar como temas e linhas bíblicas atravessam Antigo e Novo Testamento.</p></div>
+        </article>
       </div>
-      <p class="fine">Valor de referência do guia: R$47,90. Hoje, você pode começar por uma fração desse valor.</p>
-      <div class="bonus-row">
-        <div class="bonus-mini"><strong>66 livros</strong><span>Ficha para consulta rápida</span></div>
-        <div class="bonus-mini"><strong>Gêneros</strong><span>Guia de leitura</span></div>
-        <div class="bonus-mini"><strong>Conexões</strong><span>Mapa entre os testamentos</span></div>
+    </div>
+  </section>
+
+  <section class="section section-cream">
+    <div class="container bundle">
+      <div class="bundle-media reveal"><img src="img/colecao-completa.png" alt="Coleção completa A Bíblia de Cima com três materiais complementares"></div>
+      <div class="reveal">
+        <span class="kicker">Tudo reunido em um só pacote</span>
+        <h2>Você não leva apenas um PDF. Leva um <span class="wine">sistema de consulta.</span></h2>
+        <p class="lead" style="margin-top:20px">O pacote completo foi montado para você poder alternar entre visão panorâmica, consulta livro por livro, leitura por gênero e conexões entre os testamentos.</p>
+        <div class="bundle-list">
+          <div class="bundle-item"><span class="bundle-check">✓</span><div><b>Comece pelo panorama</b><span>Use A Bíblia de Cima para visualizar a estrutura geral.</span></div></div>
+          <div class="bundle-item"><span class="bundle-check">✓</span><div><b>Consulte cada livro</b><span>Use a ficha rápida para recuperar contexto e pontos essenciais.</span></div></div>
+          <div class="bundle-item"><span class="bundle-check">✓</span><div><b>Leia de acordo com o gênero</b><span>Use o guia de gêneros para ajustar sua abordagem de leitura.</span></div></div>
+          <div class="bundle-item"><span class="bundle-check">✓</span><div><b>Conecte os testamentos</b><span>Use o mapa complementar para visualizar relações bíblicas de forma mais ampla.</span></div></div>
+        </div>
       </div>
-      <div class="packs-heading">Escolha como você quer começar:</div>
-      <div class="pack-grid">
-        <div class="pack" id="packBasico">
-          <span class="pack-tag">PACOTE BÁSICO</span>
-          <span class="pack-name">A Bíblia de Cima</span>
-          <span class="pack-price">R$5,70</span>
-          <div class="plan-divider"></div>
-          <ul class="pack-list">
-            <li>Guia visual completo em PDF</li>
+    </div>
+  </section>
+
+  <section class="section section-paper">
+    <div class="container">
+      <div class="path-head reveal" style="margin-bottom:34px">
+        <span class="kicker">Como usar</span>
+        <h2>Abra quando estiver estudando. Consulte quando estiver ensinando. Volte quando precisar <span class="wine">se localizar.</span></h2>
+      </div>
+      <div class="use-cases">
+        <article class="use-card reveal"><strong>Estudo pessoal</strong><p>Use como apoio para contextualizar sua leitura e revisar rapidamente o panorama bíblico.</p></article>
+        <article class="use-card reveal"><strong>Família, célula e discipulado</strong><p>Tenha uma referência visual para explicar estruturas e conexões com mais clareza.</p></article>
+        <article class="use-card reveal"><strong>Celular, computador ou impresso</strong><p>Consulte os PDFs no formato que fizer mais sentido para sua rotina de estudo.</p></article>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-cream">
+    <div class="container guarantee-wrap reveal">
+      <div class="shield" aria-hidden="true">7</div>
+      <div><span class="kicker">Garantia</span><h3>Você tem 7 dias para conhecer o material com tranquilidade.</h3><p>Se o produto não fizer sentido para você, solicite o reembolso dentro do prazo da garantia.</p></div>
+      <div class="guarantee-tag">RISCO REDUZIDO PARA VOCÊ</div>
+    </div>
+  </section>
+
+  <section class="section section-wine" id="oferta">
+    <div class="container">
+      <div class="offer-head reveal">
+        <span class="kicker">Escolha sua versão</span>
+        <h2>Pare de juntar peças. <span class="gold">Comece a enxergar o mapa.</span></h2>
+        <p class="lead">Você pode começar apenas com o guia principal ou levar o pacote completo com os 3 materiais complementares.</p>
+        <div class="offer-anchor"><span>Acesso digital</span><span>PDFs consultáveis</span><span>7 dias de garantia</span><span>Compra pela Cakto</span></div>
+      </div>
+
+      <div class="offer-grid">
+        <article class="plan reveal" id="packBasico">
+          <span class="plan-kicker">Pacote básico</span>
+          <h3>A Bíblia de Cima</h3>
+          <p class="plan-desc">Para quem quer começar apenas pelo guia principal.</p>
+          <div class="price"><strong>R$5,70</strong><small>pagamento único</small></div>
+          <ul class="plan-list">
+            <li>Guia visual A Bíblia de Cima em PDF</li>
             <li>Acesso pela área de membros</li>
+            <li>Uso no celular, computador ou impressão</li>
             <li class="excluded">Ficha de Consulta Rápida dos 66 Livros</li>
             <li class="excluded">Guia de Como Ler Cada Gênero Literário</li>
             <li class="excluded">Mapa de Conexões Entre os Testamentos</li>
+            <li class="excluded">Sistema completo de consulta com 4 materiais</li>
           </ul>
-          <span class="pack-benefit">Ideal para começar com o guia principal.</span>
-          <button class="btn" id="btnBasico">Quero o Básico</button>
-        </div>
+          <button class="btn btn-outline" id="btnBasico">Quero apenas o Básico</button>
+          <div class="microcopy">Compra segura • acesso digital após aprovação</div>
+        </article>
 
-        <div class="pack featured" id="packCompleto">
-          <span class="pack-tag">⭐ PACOTE COMPLETO</span>
-          <span class="pack-name">A Bíblia de Cima + 3 bônus</span>
-          <span class="pack-was">De R$21,40</span>
-          <span class="pack-price">R$15,70</span>
-          <div class="plan-divider"></div>
-          <ul class="pack-list">
-            <li>Guia visual completo em PDF</li>
-            <li>Acesso pela área de membros</li>
+        <article class="plan featured reveal" id="packCompleto">
+          <span class="plan-kicker">Pacote completo</span>
+          <h3>A Bíblia de Cima + 3 complementos</h3>
+          <p class="plan-desc">A experiência mais completa para consultar, contextualizar e conectar seus estudos.</p>
+          <div class="price"><strong>R$15,70</strong><small>pagamento único</small></div>
+          <div class="price-note">Guia principal + os 3 materiais complementares exibidos nesta página.</div>
+          <ul class="plan-list">
+            <li>Guia visual A Bíblia de Cima em PDF</li>
             <li>Ficha de Consulta Rápida dos 66 Livros</li>
             <li>Guia de Como Ler Cada Gênero Literário</li>
             <li>Mapa de Conexões Entre os Testamentos</li>
-            <li>Material para consultar durante seus estudos</li>
-            <li>PDF para usar no celular, computador ou imprimir</li>
+            <li>Acesso pela área de membros</li>
+            <li>Material para consulta durante seus estudos</li>
+            <li>PDFs para usar no celular, computador ou imprimir</li>
+            <li>Conjunto pensado para visão panorâmica + consulta rápida</li>
+            <li>7 dias de garantia para conhecer o material</li>
           </ul>
-          <span class="pack-benefit">Tudo reunido para você estudar com uma visão mais completa da Bíblia.</span>
-          <button class="btn" id="btnCompleto">Quero o Completo</button>
-        </div>
+          <button class="btn" id="btnCompleto">Quero o Pacote Completo <span aria-hidden="true">→</span></button>
+          <div class="microcopy">Compra segura • acesso digital após aprovação</div>
+        </article>
       </div>
 
-      <div class="guarantee">
-        <div><strong>🛡️ GARANTIA DE 7 DIAS</strong><small>Conheça o material com tranquilidade. Se não fizer sentido para você, solicite o reembolso dentro do prazo da garantia.</small></div>
-      </div>
-      <div class="trust-line"><span>✓ Acesso digital</span><span>✓ PDF para consultar e imprimir</span><span>✓ 7 dias para decidir</span></div>
+      <div class="offer-guarantee reveal"><b>Garantia de 7 dias:</b> conheça o material com tranquilidade e solicite reembolso dentro do prazo caso ele não faça sentido para você.</div>
+    </div>
+  </section>
 
-      <div class="faq">
-        <details><summary>O material é físico ou digital?</summary><p>Totalmente digital. Assim que sua compra é aprovada, o material fica disponível na sua área de membros para download.</p></details>
-        <details><summary>Preciso saber teologia para entender?</summary><p>Não. O guia é feito para quem já lê a Bíblia, mas nunca teve a estrutura geral explicada de forma simples.</p></details>
-        <details><summary>Posso imprimir?</summary><p>Sim, é um PDF. Você pode imprimir ou usar direto do celular ou computador.</p></details>
-        <details><summary>Serve para estudo em grupo ou ensino também?</summary><p>Sim. O material pode ser usado como apoio em estudo pessoal, família, célula, discipulado e momentos de ensino.</p></details>
+  <section class="section section-paper" id="faq">
+    <div class="container faq-wrap">
+      <div class="faq-title reveal"><span class="kicker">Dúvidas frequentes</span><h2>Antes de decidir, veja o que você precisa saber.</h2><p class="lead">Sem letras miúdas: formato, acesso, uso e garantia explicados de forma direta.</p></div>
+      <div class="faq reveal">
+        <details><summary>O material é físico ou digital?</summary><p>Totalmente digital. Após a aprovação da compra, o material fica disponível na área de membros para acesso e download.</p></details>
+        <details><summary>Preciso saber teologia para entender?</summary><p>Não. A proposta é justamente facilitar a visualização da estrutura bíblica para quem lê a Bíblia e quer compreender melhor como as partes se relacionam.</p></details>
+        <details><summary>Posso imprimir?</summary><p>Sim. Os materiais são em PDF, então você pode consultar no celular ou computador e também imprimir para uso pessoal.</p></details>
+        <details><summary>Qual é a diferença entre o Básico e o Completo?</summary><p>O Básico inclui o guia principal A Bíblia de Cima. O Completo adiciona a Ficha de Consulta Rápida dos 66 Livros, o Guia de Como Ler Cada Gênero Literário e o Mapa de Conexões Entre os Testamentos.</p></details>
+        <details><summary>Serve para estudo em grupo ou ensino?</summary><p>Sim. O material pode ser usado como apoio em estudo pessoal, família, célula, discipulado e momentos de ensino.</p></details>
+        <details><summary>Como funciona a garantia de 7 dias?</summary><p>Você pode conhecer o material e, se ele não fizer sentido para você, solicitar o reembolso dentro do prazo de 7 dias da garantia.</p></details>
       </div>
     </div>
   </section>
 
+  <section class="section section-dark">
+    <div class="container final-cta reveal">
+      <span class="kicker">A Bíblia além da tradução</span>
+      <h2>Você já conhece muitas partes. Agora falta <span class="gold">enxergar como elas se conectam.</span></h2>
+      <p class="lead">A Bíblia de Cima foi criada para ser o mapa ao qual você pode voltar sempre que quiser recuperar a visão do todo.</p>
+      <a class="btn" href="#oferta">Ver as opções de acesso <span aria-hidden="true">↑</span></a>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="container footer-row">
+    <div class="footer-brand"><img src="img/logo-abba-palavra.png" alt="ABBA PALAVRA"><span>ABBA PALAVRA</span></div>
+    <div>A Bíblia de Cima — material digital educacional. Todos os direitos reservados.</div>
+  </div>
+</footer>
+
+<div class="sticky-cta" id="stickyCta">
+  <div class="sticky-copy"><b>Pacote completo por R$15,70</b><span>A Bíblia de Cima + 3 complementos</span></div>
+  <a class="btn" href="#oferta">Ver oferta</a>
 </div>
 
-<!-- MODAL — upsell pré-checkout -->
-<div class="modal-overlay" id="upsellModal">
-  <div class="modal">
-    <h3>Espere! Libere os 3 bônus por apenas R$4,20 a mais</h3>
-    <p>Se você escolher o básico por R$5,70, esta condição permite adicionar o Pacote Completo por R$9,90 no total. Os 3 bônus entram junto com o guia.</p>
-    <button class="btn" id="btnAceitarUpsell">Quero o Pacote Completo por R$9,90</button>
-    <button class="btn-ghost" id="btnRecusarUpsell">Não, quero seguir com o básico por R$5,70</button>
+<div class="lightbox" id="lightbox" aria-hidden="true">
+  <button class="lightbox-close" id="lightboxClose" aria-label="Fechar">×</button>
+  <img id="lightboxImage" src="" alt="Visual ampliado do material">
+</div>
+
+<div class="modal-overlay" id="upsellModal" aria-hidden="true">
+  <div class="modal" role="dialog" aria-modal="true" aria-labelledby="upsellTitle">
+    <span class="kicker">Antes de seguir</span>
+    <h3 id="upsellTitle">Leve os 3 complementos por apenas R$4,20 a mais nesta condição.</h3>
+    <p>Em vez de seguir somente com o Básico por R$5,70, você pode adicionar o pacote de materiais complementares e ir para o Pacote Completo por R$9,90 no total nesta condição.</p>
+    <div class="modal-actions">
+      <button class="btn" id="btnAceitarUpsell">Quero o Completo por R$9,90</button>
+      <button class="btn btn-outline" id="btnRecusarUpsell">Não, seguir com o Básico por R$5,70</button>
+    </div>
   </div>
 </div>
 
-<div class="sticky-choice" id="stickyChoice"><span>Pronto para enxergar o todo?</span><button id="stickyComplete">Ver pacote completo</button></div>
-
 <script>
-  // ------------------------------------------------------------
-  // Substitua estes três links pelos links reais de checkout da Cakto
-  // ------------------------------------------------------------
-  const LINK_BASICO = "https://pay.cakto.com.br/nrjsucd_1098540";
-  const LINK_COMPLETO = "https://pay.cakto.com.br/g2zczxd";
-  const LINK_COMPLETO_CUPOM = "https://pay.cakto.com.br/g2zczxd?coupon=desc1";
+const LINK_BASICO = "https://pay.cakto.com.br/nrjsucd_1098540";
+const LINK_COMPLETO = "https://pay.cakto.com.br/g2zczxd";
+const LINK_COMPLETO_CUPOM = "https://pay.cakto.com.br/g2zczxd?coupon=desc1";
 
-  const track = document.getElementById('track');
-  const slides = Array.from(document.querySelectorAll('.slide'));
-  const progressFill = document.getElementById('progressFill');
+function trackCheckout(plan){
+  try{ if(typeof fbq === 'function') fbq('track','InitiateCheckout',{content_name:plan}); }catch(e){}
+  try{ if(typeof gtag === 'function') gtag('event','begin_checkout',{items:[{item_name:plan}]}); }catch(e){}
+  try{ if(window.ttq && typeof ttq.track === 'function') ttq.track('InitiateCheckout',{content_name:plan}); }catch(e){}
+}
 
-  // avança a tela ao clicar em qualquer botão "next"
-  document.querySelectorAll('.next-btn').forEach(btn => {
-    btn.addEventListener('click', () => {
-      const targetId = btn.getAttribute('data-next');
-      document.getElementById(targetId).scrollIntoView({behavior:'smooth'});
-    });
+const progress = document.getElementById('scrollProgress');
+function updateProgress(){
+  const doc = document.documentElement;
+  const max = doc.scrollHeight - doc.clientHeight;
+  progress.style.width = (max > 0 ? (doc.scrollTop / max) * 100 : 0) + '%';
+}
+window.addEventListener('scroll', updateProgress, {passive:true});
+updateProgress();
+
+const revealObserver = new IntersectionObserver((entries)=>{
+  entries.forEach(entry=>{ if(entry.isIntersecting){ entry.target.classList.add('show'); revealObserver.unobserve(entry.target); } });
+},{threshold:.14,rootMargin:'0px 0px -40px 0px'});
+document.querySelectorAll('.reveal').forEach(el=>revealObserver.observe(el));
+
+const switchTabs = document.querySelectorAll('.switcher-tab');
+switchTabs.forEach(tab=>tab.addEventListener('click',()=>{
+  switchTabs.forEach(t=>t.classList.remove('active'));
+  document.querySelectorAll('.switcher-panel').forEach(p=>p.classList.remove('active'));
+  tab.classList.add('active');
+  document.getElementById(tab.dataset.panel).classList.add('active');
+}));
+
+const heroVisual = document.getElementById('heroVisual');
+const heroImage = document.getElementById('heroImage');
+if(window.matchMedia('(pointer:fine)').matches){
+  heroVisual.addEventListener('pointermove',(e)=>{
+    const r = heroVisual.getBoundingClientRect();
+    const x = (e.clientX-r.left)/r.width-.5;
+    const y = (e.clientY-r.top)/r.height-.5;
+    heroImage.style.transform = `rotateY(${x*7-4}deg) rotateX(${-y*5+2}deg) translateY(-4px)`;
   });
+  heroVisual.addEventListener('pointerleave',()=>{heroImage.style.transform='rotateY(-4deg) rotateX(2deg)';});
+}
 
-  // atualiza a barra de progresso conforme a tela visível
-  const observer = new IntersectionObserver((entries) => {
-    entries.forEach(entry => {
-      if (entry.isIntersecting) {
-        const index = slides.indexOf(entry.target);
-        const pct = ((index + 1) / slides.length) * 100;
-        progressFill.style.width = pct + "%";
-      }
-    });
-  }, { root: track, threshold: 0.6 });
+const lightbox = document.getElementById('lightbox');
+const lightboxImage = document.getElementById('lightboxImage');
+const lightboxClose = document.getElementById('lightboxClose');
+document.querySelectorAll('[data-lightbox]').forEach(item=>item.addEventListener('click',()=>{
+  lightboxImage.src=item.dataset.lightbox;
+  lightbox.classList.add('open');
+  lightbox.setAttribute('aria-hidden','false');
+  document.body.classList.add('no-scroll');
+}));
+function closeLightbox(){ lightbox.classList.remove('open'); lightbox.setAttribute('aria-hidden','true'); document.body.classList.remove('no-scroll'); }
+lightboxClose.addEventListener('click',closeLightbox);
+lightbox.addEventListener('click',(e)=>{if(e.target===lightbox)closeLightbox();});
 
-  slides.forEach(s => observer.observe(s));
+const stickyCta = document.getElementById('stickyCta');
+const hero = document.getElementById('inicio');
+const offer = document.getElementById('oferta');
+const stickyObserver = new IntersectionObserver(()=>{
+  const heroBottom = hero.getBoundingClientRect().bottom;
+  const offerTop = offer.getBoundingClientRect().top;
+  const show = heroBottom < 0 && offerTop > window.innerHeight*.3;
+  stickyCta.classList.toggle('show',show);
+},{threshold:[0,.2,.8,1]});
+stickyObserver.observe(hero); stickyObserver.observe(offer);
+window.addEventListener('scroll',()=>{
+  const heroBottom = hero.getBoundingClientRect().bottom;
+  const offerTop = offer.getBoundingClientRect().top;
+  stickyCta.classList.toggle('show',heroBottom < 0 && offerTop > window.innerHeight*.3);
+},{passive:true});
 
-
-  // animações acionadas quando cada tela entra na viewport
-  const motionObserver = new IntersectionObserver((entries) => {
-    entries.forEach(entry => { if(entry.isIntersecting) entry.target.classList.add('is-visible'); });
-  }, { root: track, threshold: 0.35 });
-  slides.forEach(s => motionObserver.observe(s));
-  document.getElementById('s1').classList.add('is-visible');
-
-  // barra de escolha aparece depois que a oferta foi vista
-  const stickyChoice = document.getElementById('stickyChoice');
-  const offerObserver = new IntersectionObserver((entries) => {
-    entries.forEach(entry => stickyChoice.classList.toggle('show', entry.isIntersecting));
-  }, { root: track, threshold: 0.25 });
-  offerObserver.observe(document.getElementById('s6'));
-  document.getElementById('stickyComplete').addEventListener('click', () => document.getElementById('packCompleto').scrollIntoView({behavior:'smooth'}));
-
-  // oferta: pacote completo -> checkout direto
-  document.getElementById('btnCompleto').addEventListener('click', () => {
-    window.location.href = LINK_COMPLETO;
-  });
-
-  // oferta: pacote básico -> abre modal de upsell antes de ir pro checkout
-  const modal = document.getElementById('upsellModal');
-  document.getElementById('btnBasico').addEventListener('click', () => {
-    modal.classList.add('open');
-  });
-  document.getElementById('btnAceitarUpsell').addEventListener('click', () => {
-    window.location.href = LINK_COMPLETO_CUPOM;
-  });
-  document.getElementById('btnRecusarUpsell').addEventListener('click', () => {
-    window.location.href = LINK_BASICO;
-  });
-  document.addEventListener('keydown', (e) => { if(e.key === 'Escape') modal.classList.remove('open'); });
-  modal.addEventListener('click', (e) => { if(e.target === modal) modal.classList.remove('open'); });
+const modal = document.getElementById('upsellModal');
+function openModal(){modal.classList.add('open');modal.setAttribute('aria-hidden','false');document.body.classList.add('no-scroll');}
+function closeModal(){modal.classList.remove('open');modal.setAttribute('aria-hidden','true');document.body.classList.remove('no-scroll');}
+document.getElementById('btnCompleto').addEventListener('click',()=>{trackCheckout('Pacote Completo');window.location.href=LINK_COMPLETO;});
+document.getElementById('btnBasico').addEventListener('click',openModal);
+document.getElementById('btnAceitarUpsell').addEventListener('click',()=>{trackCheckout('Pacote Completo - oferta 9,90');window.location.href=LINK_COMPLETO_CUPOM;});
+document.getElementById('btnRecusarUpsell').addEventListener('click',()=>{trackCheckout('Pacote Básico');window.location.href=LINK_BASICO;});
+modal.addEventListener('click',(e)=>{if(e.target===modal)closeModal();});
+document.addEventListener('keydown',(e)=>{if(e.key==='Escape'){closeModal();closeLightbox();}});
 </script>
-
-<footer>
-  A Bíblia de Cima — material digital educacional. Todos os direitos reservados.
-</footer>
-
 </body>
 </html>
