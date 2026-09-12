@@ -251,6 +251,33 @@ footer{background:#0e0b09;color:rgba(255,255,255,.55);padding:34px 0}.footer-row
   .container{width:min(var(--max),calc(100% - 28px))}.section{padding:78px 0}.nav{height:64px}.brand span{display:none}.hero{padding:58px 0 68px}.hero-grid{gap:34px}.hero-copy{text-align:left}.hero-copy .kicker{justify-content:flex-start}.hero-copy h1{font-size:clamp(3.25rem,15vw,4.7rem)}.hero-actions,.hero-trust{justify-content:flex-start}.hero-actions .btn{width:100%}.hero-visual{min-height:430px}.hero-img{width:94%}.hero-aura{width:360px;height:360px}.float-badge{font-size:.69rem;padding:10px 12px}.badge-a{left:-2px;top:16%}.badge-b{right:-4px;bottom:13%}.signal-grid{grid-template-columns:1fr 1fr}.signal{padding:18px 8px}.signal strong{font-size:1.3rem}.switcher-panel.active{grid-template-columns:1fr;padding:22px}.feature-grid,.bonus-grid,.use-cases,.path{grid-template-columns:1fr}.path-card{padding-top:58px}.path-dot{top:18px}.gallery-item:first-child{min-height:430px}.gallery-item{min-height:250px}.guarantee-wrap{grid-template-columns:1fr;text-align:center}.shield{margin-inline:auto}.guarantee-tag{grid-column:auto}.plan{padding:24px 20px}.price strong{font-size:3.2rem}.sticky-copy{display:none}.sticky-cta{width:auto;right:12px;left:auto;transform:translateY(120px);padding:8px}.sticky-cta.show{transform:translateY(0)}.sticky-cta .btn{min-width:0}.footer-row{flex-direction:column;text-align:center}.modal{padding:26px 20px}.material-head{margin-bottom:28px}
 }
 @media(prefers-reduced-motion:reduce){*{scroll-behavior:auto!important;animation:none!important;transition:none!important}.reveal{opacity:1;transform:none}}
+
+/* --- prévia editorial da edição expandida --- */
+.preview-section{overflow:hidden}
+.preview-layout{display:grid;grid-template-columns:.9fr 1.1fr;gap:70px;align-items:center}
+.preview-copy h2{margin-top:14px}
+.preview-copy .lead{margin-top:22px;max-width:590px}
+.preview-proof{display:grid;grid-template-columns:repeat(2,1fr);gap:12px;margin-top:30px}
+.preview-proof article{border:1px solid var(--line-dark);background:rgba(255,255,255,.58);border-radius:18px;padding:18px 18px 16px;min-height:112px;box-shadow:0 12px 35px rgba(36,27,21,.045)}
+.preview-proof strong{display:block;font-family:'Cormorant Garamond',serif;font-size:2rem;color:var(--wine);line-height:1}
+.preview-proof span{display:block;margin-top:7px;font-size:.78rem;line-height:1.45;color:var(--muted)}
+.preview-device-wrap{position:relative;display:grid;place-items:center;min-height:680px}
+.preview-device-wrap::before{content:"";position:absolute;width:520px;height:520px;border-radius:50%;background:radial-gradient(circle,rgba(194,156,84,.21),transparent 66%);filter:blur(6px)}
+.preview-device{position:relative;z-index:2;width:min(620px,100%);filter:drop-shadow(0 34px 55px rgba(43,29,18,.22));border-radius:30px}
+.preview-note{margin-top:20px;padding:15px 17px;border-left:3px solid var(--gold);background:#efe4cf;border-radius:0 14px 14px 0;color:#58493d;font-size:.88rem;line-height:1.55}
+.preview-gallery-head{display:flex;justify-content:space-between;align-items:end;gap:30px;margin-top:78px;margin-bottom:26px}
+.preview-gallery-head p{max-width:520px;color:var(--muted)}
+.preview-pages{display:grid;grid-template-columns:repeat(6,1fr);gap:14px}
+.preview-page{position:relative;cursor:zoom-in;border-radius:13px;overflow:hidden;background:white;border:1px solid var(--line-dark);box-shadow:0 14px 35px rgba(36,27,21,.07);transition:transform .28s ease,box-shadow .28s ease}
+.preview-page:hover{transform:translateY(-8px) rotate(-.4deg);box-shadow:0 22px 50px rgba(36,27,21,.14)}
+.preview-page img{width:100%;aspect-ratio:827/1170;object-fit:cover}
+.preview-page::after{content:"AMPLIAR";position:absolute;left:10px;bottom:10px;background:rgba(23,18,14,.86);color:var(--gold-2);font-size:.61rem;font-weight:800;letter-spacing:.12em;padding:7px 9px;border-radius:999px;opacity:0;transform:translateY(4px);transition:.2s ease}
+.preview-page:hover::after{opacity:1;transform:none}
+.preview-ribbon{display:flex;flex-wrap:wrap;gap:8px;margin-top:24px}
+.preview-ribbon span{border:1px solid var(--line-dark);background:#fff;border-radius:999px;padding:9px 12px;font-size:.74rem;color:#5f5044}
+@media(max-width:980px){.preview-layout{grid-template-columns:1fr;gap:38px}.preview-device-wrap{min-height:560px}.preview-pages{grid-template-columns:repeat(3,1fr)}}
+@media(max-width:640px){.preview-proof{grid-template-columns:1fr 1fr}.preview-device-wrap{min-height:430px}.preview-pages{grid-template-columns:repeat(2,1fr)}.preview-gallery-head{align-items:start;flex-direction:column;margin-top:54px}.preview-page::after{opacity:1;transform:none}}
+
 </style>
 </head>
 <body>
@@ -266,6 +293,7 @@ footer{background:#0e0b09;color:rgba(255,255,255,.55);padding:34px 0}.footer-row
     <nav class="nav-links" aria-label="Navegação principal">
       <a href="#problema">Por que funciona</a>
       <a href="#material">O material</a>
+      <a href="#previa">Prévia</a>
       <a href="#bonus">Bônus</a>
       <a href="#oferta">Oferta</a>
       <a href="#faq">Dúvidas</a>
@@ -280,13 +308,13 @@ footer{background:#0e0b09;color:rgba(255,255,255,.55);padding:34px 0}.footer-row
       <div class="hero-copy reveal">
         <span class="kicker">Um mapa visual para quem quer entender a Bíblia como um todo</span>
         <h1>Pare de enxergar <em>66 livros soltos.</em> Comece a enxergar a história inteira.</h1>
-        <p class="lead">A Bíblia de Cima organiza a estrutura das Escrituras de forma visual para ajudar você a perceber como livros, temas, gêneros e testamentos se conectam — sem transformar seu estudo em um curso complicado de teologia.</p>
+        <p class="lead">A Bíblia de Cima agora chega em uma edição expandida de 117 páginas: 66 perfis livro por livro, mapas panorâmicos, fios temáticos, conexões para leitura lado a lado e trilhas práticas para ajudar você a perceber como a Escritura inteira conversa consigo mesma — do Gênesis ao Apocalipse.</p>
         <div class="hero-actions">
           <a class="btn" href="#oferta">Quero enxergar a Bíblia como um todo <span aria-hidden="true">→</span></a>
           <a class="btn btn-outline" href="#material">Ver o material por dentro</a>
         </div>
         <div class="hero-trust">
-          <span>Acesso digital</span><span>PDF para consultar</span><span>7 dias de garantia</span>
+          <span>117 páginas</span><span>66 livros em perspectiva</span><span>7 dias de garantia</span>
         </div>
       </div>
 
@@ -301,10 +329,10 @@ footer{background:#0e0b09;color:rgba(255,255,255,.55);padding:34px 0}.footer-row
 
   <section class="signal-strip" aria-label="Resumo do produto">
     <div class="container signal-grid">
-      <div class="signal"><strong>66 livros</strong><span>vistos dentro do todo</span></div>
-      <div class="signal"><strong>3 complementos</strong><span>no pacote completo</span></div>
-      <div class="signal"><strong>Visual e consultável</strong><span>para estudar no seu ritmo</span></div>
-      <div class="signal"><strong>7 dias</strong><span>para conhecer com tranquilidade</span></div>
+      <div class="signal"><strong>117 páginas</strong><span>edição expandida e preenchida</span></div>
+      <div class="signal"><strong>66 perfis</strong><span>um para cada livro bíblico</span></div>
+      <div class="signal"><strong>12 fios + 9 mapas</strong><span>para acompanhar a história</span></div>
+      <div class="signal"><strong>40 conexões</strong><span>para revisitar lado a lado</span></div>
     </div>
   </section>
 
@@ -400,6 +428,42 @@ footer{background:#0e0b09;color:rgba(255,255,255,.55);padding:34px 0}.footer-row
     </div>
   </section>
 
+  <section class="section section-cream preview-section" id="previa">
+    <div class="container">
+      <div class="preview-layout">
+        <div class="preview-copy reveal">
+          <span class="kicker">Prévia real da nova edição</span>
+          <h2>Agora existe conteúdo para <span class="wine">explorar, conectar e revisitar.</span></h2>
+          <p class="lead">A edição expandida foi reconstruída como um guia editorial completo — não como uma sequência de slides vazios. Cada página precisa entregar contexto, história, movimento narrativo, referências, conexões ou uma ferramenta visual de consulta.</p>
+          <div class="preview-proof">
+            <article><strong>117</strong><span>páginas em formato A4, pensadas para leitura digital e impressão.</span></article>
+            <article><strong>66</strong><span>perfis livro por livro com história em perspectiva e conexões.</span></article>
+            <article><strong>12 + 9</strong><span>fios transversais e mapas panorâmicos para seguir temas e movimentos.</span></article>
+            <article><strong>40</strong><span>conexões adicionais para colocar textos distantes em conversa.</span></article>
+          </div>
+          <div class="preview-note"><strong>Não é apenas mais texto.</strong> A proposta é permitir que você localize um livro, reconheça seus movimentos, veja passagens-chave e siga conexões com outras partes da Bíblia sem perder a visão do todo.</div>
+          <div class="preview-ribbon"><span>linhas do tempo</span><span>mapas de leitura</span><span>perfis dos 66 livros</span><span>conexões temáticas</span><span>trilhas de estudo</span></div>
+        </div>
+        <div class="preview-device-wrap reveal">
+          <img class="preview-device" src="img/preview-scroll.gif" alt="Prévia animada mostrando a rolagem da edição expandida A Bíblia de Cima em um tablet">
+        </div>
+      </div>
+
+      <div class="preview-gallery-head reveal">
+        <div><span class="kicker">Algumas páginas reais</span><h3>Clique para olhar mais de perto.</h3></div>
+        <p>Selecionamos páginas de abertura, mapas, perfis de livros e conexões. As miniaturas possuem marca d'água de prévia; o material entregue não.</p>
+      </div>
+      <div class="preview-pages">
+        <figure class="preview-page reveal" data-lightbox="img/preview-page-1.jpg"><img src="img/preview-page-1.jpg" alt="Capa da edição expandida A Bíblia de Cima"></figure>
+        <figure class="preview-page reveal" data-lightbox="img/preview-page-2.jpg"><img src="img/preview-page-2.jpg" alt="Mapa da grande linha da história bíblica"></figure>
+        <figure class="preview-page reveal" data-lightbox="img/preview-page-3.jpg"><img src="img/preview-page-3.jpg" alt="Índice visual dos fios que atravessam a Bíblia"></figure>
+        <figure class="preview-page reveal" data-lightbox="img/preview-page-4.jpg"><img src="img/preview-page-4.jpg" alt="Perfil detalhado de um livro bíblico"></figure>
+        <figure class="preview-page reveal" data-lightbox="img/preview-page-5.jpg"><img src="img/preview-page-5.jpg" alt="Perfil detalhado do livro de Atos"></figure>
+        <figure class="preview-page reveal" data-lightbox="img/preview-page-6.jpg"><img src="img/preview-page-6.jpg" alt="Página com conexões bíblicas para leitura lado a lado"></figure>
+      </div>
+    </div>
+  </section>
+
   <section class="section section-dark" id="bonus">
     <div class="container">
       <div class="bonus-head reveal">
@@ -479,7 +543,7 @@ footer{background:#0e0b09;color:rgba(255,255,255,.55);padding:34px 0}.footer-row
           <p class="plan-desc">Para quem quer começar apenas pelo guia principal.</p>
           <div class="price"><strong>R$5,70</strong><small>pagamento único</small></div>
           <ul class="plan-list">
-            <li>Guia visual A Bíblia de Cima em PDF</li>
+            <li>Edição Expandida de A Bíblia de Cima — 117 páginas em PDF</li>
             <li>Acesso pela área de membros</li>
             <li>Uso no celular, computador ou impressão</li>
             <li class="excluded">Ficha de Consulta Rápida dos 66 Livros</li>
@@ -498,11 +562,15 @@ footer{background:#0e0b09;color:rgba(255,255,255,.55);padding:34px 0}.footer-row
           <div class="price"><strong>R$15,70</strong><small>pagamento único</small></div>
           <div class="price-note">Guia principal + os 3 materiais complementares exibidos nesta página.</div>
           <ul class="plan-list">
-            <li>Guia visual A Bíblia de Cima em PDF</li>
+            <li>Edição Expandida de A Bíblia de Cima — 117 páginas em PDF</li>
             <li>Ficha de Consulta Rápida dos 66 Livros</li>
             <li>Guia de Como Ler Cada Gênero Literário</li>
             <li>Mapa de Conexões Entre os Testamentos</li>
             <li>Acesso pela área de membros</li>
+            <li>66 perfis livro por livro com movimentos, passagens-chave e conexões</li>
+            <li>12 fios transversais + 9 mapas panorâmicos</li>
+            <li>40 conexões adicionais para leitura lado a lado</li>
+            <li>Trilhas de leitura para continuar estudando por temas</li>
             <li>Material para consulta durante seus estudos</li>
             <li>PDFs para usar no celular, computador ou imprimir</li>
             <li>Conjunto pensado para visão panorâmica + consulta rápida</li>
